@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv*/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Model files (large, re-downloadable)
+*.bin
+*.safetensors
+*.gguf
+*.ckpt
+*.pt
+*.pth
+
+# Data (regenerable experiment data)
+data/
+*.npz
+*.npy
+
+# External dependencies (clone separately)
+TransformerLens/
+llama.cpp/
+
+# PDFs (reference by arXiv link)
+*.pdf
+
+# Logs and outputs
+*.log
+results/
+outputs/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.local
+*.key
+*.pem
+
+# Claude
+.claude/

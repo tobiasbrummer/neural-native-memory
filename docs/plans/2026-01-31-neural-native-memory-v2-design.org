@@ -1,0 +1,462 @@
+#+TITLE: Neural Native Memory Architecture v2 - Design Document
+#+DATE: 2026-01-31
+#+PROPERTY: project kv-llm-vectorstore
+#+PROPERTY: status draft
+
+* Vision & Kernprinzipien
+
+** Vision
+
+Das System ersetzt klassische RAG-Architekturen durch eine *LLM-native Wissensintegration*. Statt Text durch fremde Embedding-Modelle zu jagen und später wieder in Text zu übersetzen, bleibt alles im Vektorraum des LLMs selbst.
+
+*Kernthese:* Das LLM ist der "Schlaue" - es sollte sowohl Encoder als auch Decoder sein, und Wissen sollte direkt injiziert werden, ohne Uebersetzungsverluste.
+
+** Designprinzipien
+
+1. *Single Vector Space* - Alle Operationen im nativen Vektorraum des LLMs
+2. *Faktorisierung* - Deterministische Komponenten (Token-IDs, Datum) werden rausgerechnet, nur das semantische Delta wird gespeichert
+3. *Zwei Kanaele* - Passives Wissen (automatisch injiziert) und aktives Wissen (vom LLM abgerufen)
+4. *Append-Only* - Keine Ueberschreibungen, sondern Versionierung mit FSRS-basierter Relevanz
+5. *LLM-Autonomie* - Das LLM entscheidet selbst, wie es auf Wissen zugreift (RLM-Prinzip)
+
+** Abgrenzung zu klassischem RAG
+
+| Klassisch                              | Neural Native                          |
+|----------------------------------------+----------------------------------------|
+| Text -> Fremd-Embedding -> DB -> Text -> LLM | Text -> LLM -> Delta -> DB -> Direkte Injektion |
+| Chunking-Probleme                      | Token/Wort-Granularitaet               |
+| Kontext-Verlust                        | Volle Kontexterhaltung                 |
+| LLM muss "lesen"                       | LLM "sieht" direkt                     |
+
+* Speicherarchitektur - Faktorisierter Vektorraum
+
+** Das Prinzip
+
+Jeder Eintrag wird in deterministische und semantische Komponenten zerlegt:
+
+#+BEGIN_EXAMPLE
+H_gesamt = Delta_semantisch + Σ E_tokens + Σ E_datum
+           └──────────────┘   └────────┘   └───────┘
+           Gespeichert als    Lookup via   Lookup via
+           komprimierter      Token-IDs    Datum-IDs
+           Vektor
+#+END_EXAMPLE
+
+*Nur das Delta wird gespeichert* - alles andere ist zur Laufzeit rekonstruierbar.
+
+** Datenstruktur pro Eintrag
+
+#+BEGIN_SRC javascript
+{
+  // Semantik (komprimiert)
+  delta: float16[hidden_dim],
+
+  // Deterministische Komponenten (IDs fuer Lookup)
+  token_ids: int32[],
+  date_ids: {
+    weekday: int8,    // 0-6
+    day: int8,        // 1-31
+    month: int8,      // 1-12
+    year: int16,      // z.B. 2026
+    hour: int8,       // 0-23 (optional)
+    minute: int8      // 0-59 (optional)
+  },
+
+  // Struktur-Metadaten
+  entity_id: ULID,
+  supersedes: ULID | null,
+  timestamp_created: int64,
+  fsrs_score: float32
+}
+#+END_SRC
+
+** Statische Embedding-Lookups
+
+| Komponente        | Quelle                                | Einmalig berechnet        |
+|-------------------+---------------------------------------+---------------------------|
+| Token-Embeddings  | LLM Embedding-Matrix                  | Nein (bereits im Modell)  |
+| Wochentage        | ~embed("Montag")~, etc.               | 7 Vektoren                |
+| Tage              | ~embed("Der {i}. Tag eines Monats")~  | 31 Vektoren               |
+| Monate            | ~embed("Januar")~, etc.               | 12 Vektoren               |
+| Jahre             | ~embed("Das Jahr {y}")~               | ~200 Vektoren (1900-2100) |
+| Stunden           | ~embed("{h} Uhr, Tageszeit")~         | 24 Vektoren               |
+
+*Gesamt:* ~275 vorberechnete Datums-Vektoren + LLM-Embedding-Matrix.
+
+** Rekonstruktion
+
+#+BEGIN_SRC python
+def reconstruct(entry):
+    H = entry.delta
+    H += sum(token_embedding_matrix[tid] for tid in entry.token_ids)
+    H += weekday_lookup[entry.date_ids.weekday]
+    H += day_lookup[entry.date_ids.day]
+    H += month_lookup[entry.date_ids.month]
+    H += year_lookup[entry.date_ids.year]
+    if entry.date_ids.hour:
+        H += hour_lookup[entry.date_ids.hour]
+    return H
+#+END_SRC
+
+* Zwei-Kanal-Retrieval - Passiv & Aktiv
+
+** Uebersicht
+
+#+BEGIN_EXAMPLE
+┌─────────────────────────────────────────────────────────────┐
+│                    AKTUELLER KONTEXT                        │
+│               (Conversation / User Input)                   │
+└─────────────────────┬───────────────────┬───────────────────┘
+                      │                   │
+          ┌───────────▼───────┐ ┌─────────▼─────────┐
+          │  PASSIVER KANAL   │ │  AKTIVER KANAL    │
+          │  (Background)     │ │  (On-Demand)      │
+          └───────────┬───────┘ └─────────┬─────────┘
+                      │                   │
+                      ▼                   ▼
+              ┌───────────────────────────────────┐
+              │           VEKTOR-DB               │
+              └───────────────────────────────────┘
+#+END_EXAMPLE
+
+** Passiver Kanal - Automatische Resonanz
+
+*Trigger:* Kontinuierlich im Hintergrund, waehrend der User tippt oder das LLM arbeitet.
+
+*Mechanismus:*
+1. Aktueller Kontext wird embedded
+2. Similarity-Suche gegen DB (mit FSRS-Filter)
+3. Nur Treffer mit ~fsrs_score > threshold~ werden beruecksichtigt
+4. Hierarchischer Zoom-In: Erst Kategorien/Zusammenfassungen, dann Details bei Bedarf
+
+*Injektions-Tiefe:* Oberflaechlich - Titel, Kategorien, Zusammenfassungen. Genug, damit das LLM weiss, /dass/ relevantes Wissen existiert.
+
+*Beispiel:*
+#+BEGIN_EXAMPLE
+User: "Was sollen wir naechste Woche essen?"
+
+-> Passiv injiziert: "Verfuegbar: 47 Rezepte in Kategorien:
+   Italienisch (12), Grill (8), Vegetarisch (15), Asiatisch (12)"
+
+-> LLM weiss jetzt, was es aktiv abrufen kann
+#+END_EXAMPLE
+
+** Aktiver Kanal - Deliberate Retrieval
+
+*Trigger:* LLM entscheidet selbst: "Ich brauche mehr Info ueber X"
+
+*Mechanismus:*
+1. LLM formuliert Query (oder navigiert hierarchisch)
+2. Voller DB-Zugriff, *kein* FSRS-Filter
+3. Tiefe Injektion moeglich (volle Deltas, alle Versionen)
+4. LLM sieht auch superseded Eintraege mit Timestamps
+
+*Beispiel:*
+#+BEGIN_EXAMPLE
+LLM (intern): "User fragt nach Grillen. Ich hole die Grill-Rezepte."
+
+-> Aktiv abgerufen: Vollstaendige Rezept-Deltas fuer
+   Burger, Steak, Grillgemuese, ...
+
+-> LLM kann jetzt konkret antworten
+#+END_EXAMPLE
+
+** Vergleich
+
+| Aspekt      | Passiv                   | Aktiv                |
+|-------------+--------------------------+----------------------|
+| Trigger     | Automatisch              | LLM-Entscheidung     |
+| FSRS-Filter | Ja                       | Nein                 |
+| Tiefe       | Oberflaechlich           | Voll                 |
+| Supersedes  | Nur aktuellste           | Alle Versionen       |
+| Analogie    | Peripheres Sehen         | Fokussiertes Lesen   |
+
+* FSRS-Layer & Update-Mechanismus
+
+** FSRS - Selektives Vergessen fuer Passives Wissen
+
+*Zweck:* Nicht alles ist gleich relevant. Der FSRS-Score bestimmt, was im passiven Kanal "auftaucht" und was verblasst.
+
+*Score-Dynamik:*
+
+| Ereignis                                   | Auswirkung                      |
+|--------------------------------------------+---------------------------------|
+| Eintrag wird aktiv abgerufen               | Score steigt                    |
+| Eintrag wird passiv injiziert und genutzt  | Score steigt                    |
+| Zeit vergeht ohne Abruf                    | Score sinkt (Forgetting Curve)  |
+| User markiert als "wichtig"                | Score steigt stark (Boost)      |
+| Eintrag wird superseded                    | Alter Eintrag: Score sinkt stark|
+
+*Wichtig:* FSRS filtert *nur den passiven Kanal*. Im aktiven Kanal sieht das LLM alles, mit Score als Metadatum.
+
+#+BEGIN_SRC python
+# Passiver Kanal
+def passive_retrieve(query, threshold=0.5):
+    candidates = similarity_search(query)
+    return [c for c in candidates if c.fsrs_score > threshold]
+
+# Aktiver Kanal
+def active_retrieve(query):
+    candidates = similarity_search(query)
+    return candidates  # Alle, mit fsrs_score als Info
+#+END_SRC
+
+** Threshold als LLM-Parameter
+
+Das LLM kann den passiven Threshold selbst steuern:
+- Zu viel Noise? -> Threshold erhoehen
+- Wichtiges wird verpasst? -> Threshold senken
+
+** Update-Mechanismus - Append-Only mit Supersedes
+
+*Prinzip:* Nichts wird ueberschrieben. Neue Information wird angehaengt und referenziert die alte.
+
+*Beispiel: Grillen-Szenario*
+
+#+BEGIN_EXAMPLE
+t=0: "6 Freunde kommen zum Grillen"
+     -> Entry_A { delta: [...], entity_id: "grillen_2026" }
+
+t=1: "5 Freunde kommen zum Grillen" (einer hat abgesagt)
+     -> Entry_B { delta: [...], entity_id: "grillen_2026",
+                  supersedes: Entry_A.id }
+#+END_EXAMPLE
+
+*Verhalten:*
+
+| Kanal  | Was wird gesehen                                   |
+|--------+----------------------------------------------------|
+| Passiv | Nur Entry_B (aktuellste Version)                   |
+| Aktiv  | Entry_A + Entry_B, mit Timestamps + Supersedes-Info|
+
+*Das LLM versteht:* "Urspruenglich 6, jetzt 5. Einer hat abgesagt."
+
+** Supersedes-Chain
+
+#+BEGIN_EXAMPLE
+Entry_A (original)
+    ^ superseded by
+Entry_B (update 1)
+    ^ superseded by
+Entry_C (update 2) <- aktuell
+#+END_EXAMPLE
+
+*Abfrage der Historie:*
+
+#+BEGIN_SRC python
+def get_history(entity_id):
+    entries = db.filter(entity_id=entity_id)
+    return sorted(entries, by=timestamp)  # Chronologisch
+#+END_SRC
+
+* Selektive Suche & Datums-Flexibilitaet
+
+** Das Prinzip
+
+Durch die Faktorisierung koennen Komponenten bei der Suche gezielt ein- oder ausgeschlossen werden.
+
+#+BEGIN_SRC python
+def flexible_search(query, include_tokens=True, include_date=True,
+                    date_components=['weekday', 'month', 'year', 'day', 'hour']):
+
+    query_vector = embed(query)
+
+    for entry in db:
+        # Rekonstruiere nur gewuenschte Komponenten
+        H = entry.delta
+
+        if include_tokens:
+            H += reconstruct_tokens(entry.token_ids)
+
+        if include_date:
+            for comp in date_components:
+                H += date_lookup[comp][entry.date_ids[comp]]
+
+        similarity = cosine(query_vector, H)
+#+END_SRC
+
+** Beispiel-Queries
+
+| Query                      | Konfiguration        | Findet                                   |
+|----------------------------+----------------------+------------------------------------------|
+| "Geburtstagsfeier"         | Alles inkl.          | Spezifische Feier am 15.03.2026          |
+| "Was passiert im Maerz?"   | Ohne Jahr            | Alle Maerz-Ereignisse, egal welches Jahr |
+| "Montagstermine"           | Nur Wochentag        | Alles was montags stattfindet            |
+| "Rezepte"                  | Ohne Datum           | Alle Rezepte, zeitunabhaengig            |
+| "Was war letzten Sommer?"  | Ohne Tag/Wochentag   | Juni-August Ereignisse                   |
+
+** Zyklische Suchen
+
+Die Datums-Komponenten ermoeglichen natuerliche Zyklen-Abfragen:
+
+#+BEGIN_SRC python
+# "Wann ist Muellabfuhr?"
+# -> Suche nur mit Wochentag-Komponente
+result = search("Muellabfuhr", date_components=['weekday'])
+# -> Findet: "Dienstag" (ohne spezifisches Datum)
+
+# "Was machen wir normalerweise am Wochenende?"
+# -> Suche mit Wochentag = Samstag ODER Sonntag
+results = search("Aktivitaeten", weekday_filter=[5, 6])
+#+END_SRC
+
+** Semantische Richtungen der Datums-Vektoren
+
+Die kontextualisierten Embeddings zeigen in semantische Cluster:
+
+#+BEGIN_EXAMPLE
+                    "Wochenende"
+                         ^
+            Samstag <----+----> Freitag
+                         |
+    "Arbeitswoche" <-----+-----> "Wochenanfang"
+                         |
+                      Montag
+
+                    "Winter"
+                         ^
+           Dezember <----+----> Januar
+                         |
+    "Fruehling" <--------+--------> "Herbst"
+                         |
+                    Maerz/April
+#+END_EXAMPLE
+
+*Vorteil:* Eine Suche nach "Wochenende" findet automatisch Samstag/Sonntag-Eintraege durch Vektor-Naehe, ohne explizite Filterung.
+
+* Hierarchischer Zoom-In
+
+** Das Prinzip
+
+Wissen wird nicht flach durchsucht, sondern hierarchisch navigiert - vom Ueberblick zum Detail.
+
+#+BEGIN_EXAMPLE
+         ┌─────────────────────────────┐
+Level 0  │  ROOT: "Alle Dokumente"     │  Aggregat-Vektor
+         └──────────────┬──────────────┘
+                        │
+         ┌──────────────┼──────────────┐
+         ▼              ▼              ▼
+     ┌───────┐     ┌────────┐    ┌─────────┐
+L1   │Rezepte│     │ Fotos  │    │ E-Mails │   Kategorie-Vektoren
+     └───┬───┘     └────┬───┘    └────┬────┘
+         │              │             │
+    ┌────┼────┐    ┌────┼────┐   ┌────┼────┐
+    ▼    ▼    ▼    ▼    ▼    ▼   ▼    ▼    ▼
+L2  It.  Gr. Veg. Urlaub Geb. ... Arbeit Privat   Sub-Kategorien
+    │
+    ▼
+L3  Lasagne, Risotto, ...                         Detail-Eintraege
+#+END_EXAMPLE
+
+** Navigation im Vektorraum
+
+Keine expliziten Pointer noetig - die Hierarchie ergibt sich aus Vektor-Similarity:
+
+#+BEGIN_SRC python
+def zoom_in(current_vector, depth=1):
+    # Finde Kinder: Vektoren mit hoher Similarity zu current
+    children = similarity_search(current_vector,
+                                 filter=lambda e: e.level == current_level + 1)
+    return children
+
+def zoom_out(current_vector):
+    # Finde Parent: Aggregat-Vektor mit hoechster Similarity
+    parent = similarity_search(current_vector,
+                               filter=lambda e: e.level == current_level - 1,
+                               top_k=1)
+    return parent
+#+END_SRC
+
+** Aggregat-Vektoren (Kategorie-Ebene)
+
+*Erstellung:* Beim Ingest oder als Batch-Prozess
+
+#+BEGIN_SRC python
+def create_category_vector(category_name, child_entries):
+    # Option A: Centroid der Kinder
+    centroid = mean([e.delta for e in child_entries])
+
+    # Option B: LLM-generierte Zusammenfassung
+    summary = llm.summarize(child_entries)
+    summary_delta = embed(summary)
+
+    return {
+        'delta': summary_delta,  # oder centroid
+        'level': parent_level,
+        'entity_id': f"category_{category_name}",
+        'child_count': len(child_entries)
+    }
+#+END_SRC
+
+** Anwendung: Passive Injektion
+
+#+BEGIN_EXAMPLE
+User: "Was kochen wir heute?"
+
+1. Passive Suche findet: Kategorie "Rezepte" (Level 1)
+
+2. Injiziert wird:
+   "Du hast 47 Rezepte: Italienisch (12), Grill (8),
+    Vegetarisch (15), Asiatisch (12)"
+
+3. LLM entscheidet aktiv: "Zeig mir die vegetarischen"
+
+4. Zoom-In auf "Vegetarisch" (Level 2)
+
+5. Injiziert werden: Detail-Deltas der vegetarischen Rezepte
+#+END_EXAMPLE
+
+** Vorteile
+
+| Aspekt       | Flache Suche                         | Hierarchischer Zoom-In      |
+|--------------+--------------------------------------+-----------------------------|
+| Token-Budget | Schnell erschoepft                   | Effizient genutzt           |
+| Orientierung | LLM weiss nicht, was es nicht weiss  | LLM sieht Ueberblick        |
+| Navigation   | Alles oder nichts                    | Schrittweise Vertiefung     |
+
+* Offene Fragen & Naechste Schritte
+
+** Offene Fragen - Zu validieren durch Experimente
+
+| Frage                                 | Hypothese                                              | Test                                         |
+|---------------------------------------+--------------------------------------------------------+----------------------------------------------|
+| Wort-Level Pooling + Token-IDs        | Pooling fuer Retrieval, Token-IDs separat fuer Rekonstruktion | Vergleich Retrieval-Qualitaet          |
+| Impliziter Vektor-Graph               | Relationen durch Delta-Entanglement abbildbar (Mann <-> Bank) | Retrieval-Test mit relationalen Queries |
+| Passiver Threshold                    | LLM kann sinnvoll selbst steuern                       | A/B-Test mit fixem vs. dynamischem Threshold |
+| Datums-Vektoren Semantik              | Kontextualisierte Embeddings besser als naive          | Similarity-Analyse der Datums-Cluster        |
+| Aggregat-Vektoren                     | Centroid vs. LLM-Summary - was funktioniert besser?    | Retrieval-Precision auf Kategorie-Ebene      |
+
+** Naechste Schritte - Priorisiert
+
+*** Phase 1: Kern-Infrastruktur
+1. Datums-Embedding-Lookups generieren (275 Vektoren)
+2. Speicherformat erweitern (date_ids, supersedes, fsrs_score)
+3. Rekonstruktions-Funktion mit selektiven Komponenten
+
+*** Phase 2: Zwei-Kanal-System
+4. Passiver Kanal mit FSRS-Filter
+5. Aktiver Kanal mit voller Historie
+6. Hierarchische Aggregat-Vektoren
+
+*** Phase 3: Validierung
+7. Retrieval-Benchmarks mit Datums-Queries
+8. Graph-artige Relationen testen
+9. End-to-End mit echten Dokumenten
+
+*** Phase 4: Performance
+10. llama.cpp Integration fuer Geschwindigkeit
+11. Batch-Konsolidierung fuer Aggregat-Vektoren
+
+** Abgrenzung: Was dieses System NICHT ist
+
+- *Kein Ersatz fuer strukturierte Datenbanken* - Transaktionen, exakte Joins, Multi-Hop-Traversal gehoeren in SQL/Graph-DBs
+- *Kein reines RAG* - Ziel ist kognitive Autonomie, nicht nur Retrieval
+- *Kein Fine-Tuning* - Das Modell wird nicht veraendert, nur sein "Gedaechtnis"
+
+** Referenzen
+
+- KV-Embedding Paper (arXiv:2601.01046v1)
+- Recursive Language Models Paper (arXiv:2512.24601v2)
+- FSRS (Free Spaced Repetition Scheduler)
+- Bestehendes Design: ~docs/plans/2026-01-21-kv-embedding-prototype-design.md~

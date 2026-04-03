@@ -1,0 +1,197 @@
+#+TITLE: Runtime Layer Scoring fuer Retrieval und Injection
+#+DATE: 2026-02-07
+#+PROPERTY: project kv-llm-vectorstore
+#+PROPERTY: status draft
+
+* Ziel
+
+Diese Notiz konkretisiert den naechsten Schritt fuer NNM:
+Layer-Auswahl nicht statisch/fix, sondern laufzeitfaehig ueber Scores steuern.
+
+Kernidee:
+1. *Kandidatenbereiche* pro Modell festlegen (retrieval vs injection)
+2. *Dynamische Auswahl* innerhalb dieser Kandidaten ueber laufend aktualisierte Scores
+
+* Kontext und Befund (Exp10)
+
+Run: ~data/results/nnm_exp10_20260207_105602/results.json~
+
+- Retrieval-Layer (best): 26
+- Injection-Layer (best): 18
+- Fazit: bester Retrieval-Layer != bester Injection-Layer
+
+Implikation:
+- Retrieval und Injection muessen als zwei getrennte Optimierungsziele behandelt werden.
+- Ein gemeinsamer "best layer" ist nicht robust.
+
+* Architektur-Entscheidung
+
+** 1) Kandidatenmengen (pro Modell)
+
+- ~retrieval_candidates~: aus ID-basierter Auswahl (paper/fixed)
+- ~injection_candidates~: aus spaetem Drittel (ohne letzte Layer)
+
+Diese Kandidaten werden bei Modellstart oder periodisch neu bestimmt.
+
+** 2) Laufzeit-Auswahl
+
+Pro Anfrage:
+- einen Retrieval-Layer aus ~retrieval_candidates~
+- einen Injection-Layer aus ~injection_candidates~
+
+Auswahlkriterium:
+- hoechster aktueller Score, mit kleiner Exploration-Rate (z. B. 5-10%).
+
+* DB-Schema (MVP)
+
+Eine eigene Collection/Tabelle, z. B. ~layer_stats~:
+
+#+BEGIN_SRC javascript
+{
+  model_id: "Qwen/Qwen2-1.5B",
+  layer_id: 26,
+  role: "retrieval",            // retrieval | injection
+  context_bucket: "global",     // spaeter: domain/lang/task
+
+  score: 0.0,                   // laufender Qualitaetsscore
+  n_obs: 0,                     // Anzahl Updates
+  ewma_alpha: 0.05,             // effektiver Update-Faktor
+
+  last_reward: 0.0,
+  updated_at: 1738923000
+}
+#+END_SRC
+
+Optional spaeter:
+- getrennte Teilmetriken (z. B. ~score_ndcg~, ~score_recon~, ~score_effect~)
+- Unsicherheit fuer Bandit/UCB (~variance~, ~n_selected~)
+
+* Reward-Definitionen
+
+** Retrieval-Reward
+
+Bevorzugt mit Ground-Truth:
+- ~NDCG@k~, ~MRR@k~, ~Recall@k~
+
+Falls kein Label vorhanden:
+- Proxy aus ~top1-top2 margin~, ~query paraphrase stability~, ~cosine margin~
+
+** Injection-Reward
+
+Kombination aus:
+- *Treue*: ~logit_recon_true_abs_mean~ (kleiner besser)
+- *Wirksamkeit*: ~logit_true_base_abs_mean~ (nicht zu klein)
+- *Konsistenz*: ~top1_recon_true_match~, ~top5_jaccard_recon_true~
+
+Beispiel wie in Exp10:
+- ~injectability_score = (1/(1+recon_err)) * (1+effect) * top_consistency_factor~
+
+* Update-Regel
+
+EWMA pro Layer:
+
+#+BEGIN_SRC python
+def update_score(old_score, reward, alpha=0.05):
+    return (1 - alpha) * old_score + alpha * reward
+#+END_SRC
+
+Zusatz:
+- ~n_obs~ inkrementieren
+- bei wenigen Beobachtungen explorativer waehlen
+
+* Laufzeit-Policy (MVP)
+
+1. Lade Kandidaten und Scores fuer das Modell.
+2. Mit Wahrscheinlichkeit ~eps~ (z. B. 0.1): zufaelligen Kandidaten waehlen.
+3. Sonst: Kandidat mit maximalem Score waehlen.
+4. Nach Anfrage Reward berechnen und Score persistieren.
+
+Damit entsteht ein leichtgewichtiger contextual-bandit-artiger Loop.
+
+* Operational Notes
+
+- Scores pro ~model_id~ strikt trennen (Modellgebundenheit).
+- Kalibrierung als Warmup: z. B. erste 100-500 Events mit erhöhter Exploration.
+- Drift-Schutz: periodisch rekalibrieren (z. B. taeglich/woechentlich).
+- Fallback bei kalten Scores: vordefinierte Prioritaetsreihenfolge.
+
+* Umsetzungsschritte (kurz)
+
+1. ~layer_stats~ Store + CRUD einfuehren
+2. Runtime-Selector (~choose_retrieval_layer~, ~choose_injection_layer~)
+3. Reward-Collector (aus Retrieval/Injection-Metriken)
+4. EWMA-Update + Persistenz
+5. Monitoring: Score-Verlauf je Layer
+
+* Entscheidungs-Update (MVP 2026-02-07)
+
+Nach Exp10/Exp11 ist fuer den naechsten Produkt-Schritt die Richtung klar:
+
+1. *Erst stabiler End-to-End-Pfad, dann adaptive Layerlogik.*
+2. *Token-level beide Vektoren speichern*:
+   - Retrieval-Vektor ~R_t~
+   - Injection-Vektor ~I_t~
+3. *Quantisierung:* ~int8~ als Default fuer den Produktpfad.
+4. *Runtime-Layer-Scoring (EWMA/epsilon-greedy)* wird vorerst verschoben,
+   bis der Basispfad robust laeuft.
+
+Begruendung:
+- Das reduziert Risiko in der Integrationsphase.
+- Retrieval und Injection bleiben sauber getrennt.
+- Spaeter kann auf faktorisierten Speicher bzw. dynamische Layerwahl migriert werden.
+
+** Konkreter MVP-Storage
+
+Ziel fuer den ersten Implementierungsschritt:
+- Qdrant als Vektor-Store verwenden.
+- Pro Token beide Vektoren ablegen (~retrieval~, ~injection~).
+- Retrieval ueber den Retrieval-Vektor; Injection direkt aus gespeichertem Injection-Vektor.
+
+MVP-Metadaten pro Token/Entry:
+- ~model_id~, ~entry_id~, ~entity_id~, ~token_index~, ~token_id~
+- ~retrieval_layer~, ~injection_layer~
+- ~timestamp_created~, optional ~supersedes~, optional ~fsrs_score~
+
+* Entscheidung fuer jetzt
+
+Fuer den naechsten Entwicklungszyklus:
+- Kandidaten statisch aus Exp10 ableiten
+- Auswahl dynamisch via EWMA + epsilon-greedy
+- spaeter Kontext-Buckets (Domain/Language/Task) hinzufuegen
+
+* Validierung Retrieval-Normalisierung (neu, 2026-02-07)
+
+Ziel:
+- *Baseline* (ohne z-score/whitening) gegen
+- *Transformed* (z-score + whitening, gleiche Query-Menge)
+auf identischen BEIR-Queries vergleichen.
+
+Metriken:
+- ~NDCG@k~
+- ~Recall@k~
+- ~MRR@k~
+
+Zusatzmetriken:
+- ~Precision@k~
+- ~HitRate@k~
+- mittlere Top-Score / Top-Token-Hits (nur Diagnostik)
+
+Wichtig fuer Fairness:
+1. identische Query-IDs fuer beide Varianten
+2. gleiche Search-Parameter (~search_k~, Token-Filter, Grouping)
+3. getrennte Collections (nicht gemischt transformed/untransformed)
+
+Technische Umsetzung:
+- Neues Script: ~nnm/scripts/eval_qdrant_beir_compare_tl.py~
+  - laedt BEIR-Queries + qrels
+  - extrahiert Query-Vektoren einmal
+  - evaluiert *baseline* und *transformed* nacheinander
+  - schreibt ~results.json~ inkl. Delta (~transformed - baseline~)
+  - optionaler Sweep fuer ~min_entry_token_hits~ und ~entry_agg~
+
+Runner:
+- ~nnm/scripts/run_qwen_qdrant_eval_compare.sh~
+
+Ergebnis (scifact, Qwen2-1.5B, 2026-02-08):
+- bestes Sweep-Setting: ~entry_agg=mean_top3~, ~min_entry_token_hits=3~
+- transformed @10: ~NDCG=0.2757~, ~Recall=0.3342~, ~MRR=0.2705~
