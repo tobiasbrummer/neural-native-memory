@@ -1,0 +1,22 @@
+# exp17 E2E Gate - self-contained requirements.
+# Assumes torch + CUDA already present (typical on RunPod PyTorch templates).
+# Install with: pip install -r exp17_requirements.txt
+
+# Core ML
+# TL 2.18.0 is the minimum version with Gemma-3 support.
+# transformers 4.57 is the version Gemma-3 ships for in TL 2.18.
+transformer_lens>=2.18.0,<3.0
+transformers>=4.57.0,<5.0
+tokenizers>=0.20
+accelerate>=0.30
+bitsandbytes>=0.43
+sentencepiece>=0.1.99
+protobuf>=3.20
+
+# Data
+datasets>=2.18,<3.0
+
+# Numerics
+numpy>=1.24,<2.0
+scipy>=1.10
+scikit-learn>=1.3
