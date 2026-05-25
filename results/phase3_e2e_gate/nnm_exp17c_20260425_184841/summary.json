@@ -1,0 +1,87 @@
+{
+  "config": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "device": null,
+    "dtype": "float16",
+    "local_files_only": false,
+    "load_in_4bit": false,
+    "prepend_bos": true,
+    "split": "validation",
+    "max_queries": 100,
+    "passage_char_limit": 1500,
+    "retrieval_layer": 26,
+    "max_new_tokens": 32,
+    "no_think": true,
+    "arms": "cold,rag,nnma,random,rag_match",
+    "seeds": "42,43,44"
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "n_queries": 100,
+  "arms": {
+    "cold": {
+      "n": 300,
+      "exact_match": 0.52,
+      "token_f1": 0.5663333333333332,
+      "empty_prediction_rate": 0.0
+    },
+    "rag": {
+      "n": 300,
+      "exact_match": 0.72,
+      "token_f1": 0.7693333333333334,
+      "empty_prediction_rate": 0.0
+    },
+    "nnma": {
+      "n": 300,
+      "exact_match": 0.76,
+      "token_f1": 0.803,
+      "empty_prediction_rate": 0.0
+    },
+    "random": {
+      "n": 300,
+      "exact_match": 0.5,
+      "token_f1": 0.5474444444444445,
+      "empty_prediction_rate": 0.0
+    },
+    "rag_match": {
+      "n": 300,
+      "exact_match": 0.53,
+      "token_f1": 0.5710000000000001,
+      "empty_prediction_rate": 0.0,
+      "evidence_tokens_mean": 0.0,
+      "evidence_tokens_median": 0.0,
+      "evidence_tokens_p90": 0.0,
+      "alias_kept_rate": 0.0,
+      "em_when_alias_lost": 0.53,
+      "n_alias_lost": 300,
+      "rag_prompt_tokens_mean": 79.76,
+      "nnma_prompt_tokens_mean": 76.76
+    }
+  },
+  "paired_mcnemar": {
+    "nnma_vs_rag_match": {
+      "n_paired": 300,
+      "a_only_right": 75,
+      "b_only_right": 6,
+      "discordant_total": 81,
+      "p_value_two_sided": 2.91096598559025e-16
+    },
+    "rag_vs_rag_match": {
+      "n_paired": 300,
+      "a_only_right": 72,
+      "b_only_right": 15,
+      "discordant_total": 87,
+      "p_value_two_sided": 4.260536478846756e-10
+    },
+    "nnma_vs_rag": {
+      "n_paired": 300,
+      "a_only_right": 15,
+      "b_only_right": 3,
+      "discordant_total": 18,
+      "p_value_two_sided": 0.007537841796875
+    }
+  }
+}

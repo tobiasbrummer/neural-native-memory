@@ -1,0 +1,72 @@
+{
+  "config": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "device": null,
+    "dtype": "float16",
+    "local_files_only": false,
+    "prepend_bos": true,
+    "split": "validation",
+    "max_queries": 50,
+    "passage_char_limit": 1500,
+    "max_new_tokens": 32,
+    "no_think": true,
+    "seeds": "42"
+  },
+  "post_rope_hook": "hook_rot_k",
+  "post_rope_unavailable": false,
+  "arms": {
+    "cold": {
+      "n": 50,
+      "exact_match": 0.52,
+      "token_f1": 0.5886666666666666,
+      "empty_prediction_rate": 0.0
+    },
+    "rag": {
+      "n": 50,
+      "exact_match": 0.76,
+      "token_f1": 0.8166666666666665,
+      "empty_prediction_rate": 0.0
+    },
+    "nnma_baseline": {
+      "n": 50,
+      "exact_match": 0.78,
+      "token_f1": 0.8393333333333334,
+      "empty_prediction_rate": 0.0
+    },
+    "nnma_post_rope": {
+      "n": 50,
+      "exact_match": 0.28,
+      "token_f1": 0.36105760294455946,
+      "empty_prediction_rate": 0.0
+    },
+    "nnma_in_chat": {
+      "n": 50,
+      "exact_match": 0.58,
+      "token_f1": 0.668049062049062,
+      "empty_prediction_rate": 0.0
+    }
+  },
+  "paired": {
+    "nnma_baseline_vs_post_rope": {
+      "n_paired": 50,
+      "a_only_right": 26,
+      "b_only_right": 1,
+      "discordant_total": 27,
+      "p_value_two_sided": 4.172325134277344e-07
+    },
+    "nnma_baseline_vs_in_chat": {
+      "n_paired": 50,
+      "a_only_right": 10,
+      "b_only_right": 0,
+      "discordant_total": 10,
+      "p_value_two_sided": 0.001953125
+    },
+    "nnma_post_rope_vs_in_chat": {
+      "n_paired": 50,
+      "a_only_right": 3,
+      "b_only_right": 18,
+      "discordant_total": 21,
+      "p_value_two_sided": 0.0014896392822265625
+    }
+  }
+}

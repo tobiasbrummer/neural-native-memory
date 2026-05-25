@@ -1,0 +1,68 @@
+{
+  "config": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "device": null,
+    "dtype": "float16",
+    "local_files_only": false,
+    "prepend_bos": true,
+    "max_queries": 50,
+    "char_min": 2500,
+    "char_max": 8000,
+    "max_new_tokens": 64,
+    "no_think": true,
+    "seeds": "42"
+  },
+  "n_items": 50,
+  "arms": {
+    "cold": {
+      "n": 50,
+      "needle_recall": 0.0,
+      "subject_recall": 0.0,
+      "both": 0.0,
+      "empty_prediction_rate": 0.0
+    },
+    "rag": {
+      "n": 50,
+      "needle_recall": 0.86,
+      "subject_recall": 0.06,
+      "both": 0.02,
+      "empty_prediction_rate": 0.0,
+      "rag_prompt_token_len_mean": 1876.58
+    },
+    "nnma": {
+      "n": 50,
+      "needle_recall": 1.0,
+      "subject_recall": 0.06,
+      "both": 0.06,
+      "empty_prediction_rate": 0.0,
+      "article_token_len_mean": 1778.9,
+      "article_token_len_max": 2048
+    }
+  },
+  "paired": {
+    "needle_nnma_vs_rag": {
+      "metric": "needle_recall",
+      "n_paired": 50,
+      "a_only_right": 7,
+      "b_only_right": 0,
+      "discordant_total": 7,
+      "p_value_two_sided": 0.015625
+    },
+    "subject_nnma_vs_rag": {
+      "metric": "subject_recall",
+      "n_paired": 50,
+      "a_only_right": 1,
+      "b_only_right": 1,
+      "discordant_total": 2,
+      "p_value_two_sided": 1.0
+    },
+    "both_nnma_vs_rag": {
+      "metric": "both",
+      "n_paired": 50,
+      "a_only_right": 2,
+      "b_only_right": 0,
+      "discordant_total": 2,
+      "p_value_two_sided": 0.5
+    }
+  }
+}

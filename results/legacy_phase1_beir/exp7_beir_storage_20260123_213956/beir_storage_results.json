@@ -1,0 +1,27 @@
+{
+  "dataset": "scifact",
+  "quantize_int8": true,
+  "metrics": {
+    "ndcg": {
+      "NDCG@1": 0.4,
+      "NDCG@3": 0.49531,
+      "NDCG@5": 0.52594,
+      "NDCG@10": 0.55575,
+      "NDCG@100": 0.59837,
+      "NDCG@1000": 0.60588
+    },
+    "recall": {
+      "Recall@1": 0.38056,
+      "Recall@3": 0.55917,
+      "Recall@5": 0.63528,
+      "Recall@10": 0.72594,
+      "Recall@100": 0.91622,
+      "Recall@1000": 0.97
+    }
+  },
+  "storage": {
+    "total_mb": 2559.4262313842773,
+    "bytes_per_token": 1536.1186652166448
+  },
+  "time_sec": 514.9012145230008
+}

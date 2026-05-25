@@ -1,0 +1,40 @@
+{
+  "cold": {
+    "n": 100,
+    "exact_match": 0.52,
+    "token_f1": 0.5663333333333334,
+    "empty_prediction_rate": 0.0
+  },
+  "rag": {
+    "n": 100,
+    "exact_match": 0.72,
+    "token_f1": 0.7693333333333334,
+    "empty_prediction_rate": 0.0
+  },
+  "nnma": {
+    "n": 100,
+    "exact_match": 0.76,
+    "token_f1": 0.8030000000000002,
+    "empty_prediction_rate": 0.0
+  },
+  "random": {
+    "n": 100,
+    "exact_match": 0.47,
+    "token_f1": 0.5136666666666667,
+    "empty_prediction_rate": 0.0
+  },
+  "rag_match": {
+    "n": 100,
+    "exact_match": 0.53,
+    "token_f1": 0.571,
+    "empty_prediction_rate": 0.0,
+    "evidence_tokens_mean": 0.0,
+    "evidence_tokens_median": 0.0,
+    "evidence_tokens_p90": 0.0,
+    "alias_kept_rate": 0.0,
+    "em_when_alias_lost": 0.53,
+    "n_alias_lost": 100,
+    "rag_prompt_tokens_mean": 79.76,
+    "nnma_prompt_tokens_mean": 76.76
+  }
+}

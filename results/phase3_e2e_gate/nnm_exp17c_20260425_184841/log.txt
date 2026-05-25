@@ -1,0 +1,232 @@
+18:48:41 INFO args: {'model': 'Qwen/Qwen2.5-7B-Instruct', 'device': None, 'dtype': 'float16', 'local_files_only': False, 'load_in_4bit': False, 'prepend_bos': True, 'split': 'validation', 'max_queries': 100, 'passage_char_limit': 1500, 'retrieval_layer': 26, 'max_new_tokens': 32, 'no_think': True, 'arms': 'cold,rag,nnma,random,rag_match', 'seeds': '42,43,44'}
+18:48:41 INFO Loading model Qwen/Qwen2.5-7B-Instruct (4bit=False)
+18:50:57 INFO Model loaded. d_model=3584, n_layers=28, prepend_bos=True
+18:50:57 INFO Loading mandarjoshi/trivia_qa rc split=validation ...
+18:55:14 INFO Full size: 17944
+18:55:14 INFO Picked 100 queries with oracle passage (scanned 108)
+18:55:14 INFO ============================================================
+18:55:14 INFO SEED 42
+18:55:14 INFO ============================================================
+18:55:30 INFO   seed=42, progressed 10/100 queries
+18:55:51 INFO   seed=42, progressed 20/100 queries
+18:56:06 INFO   seed=42, progressed 30/100 queries
+18:56:23 INFO   seed=42, progressed 40/100 queries
+18:56:44 INFO   seed=42, progressed 50/100 queries
+18:57:02 INFO   seed=42, progressed 60/100 queries
+18:57:20 INFO   seed=42, progressed 70/100 queries
+18:57:38 INFO   seed=42, progressed 80/100 queries
+18:58:01 INFO   seed=42, progressed 90/100 queries
+18:58:19 INFO   seed=42, progressed 100/100 queries
+18:58:19 INFO Seed 42: {
+  "cold": {
+    "n": 100,
+    "exact_match": 0.52,
+    "token_f1": 0.5663333333333334,
+    "empty_prediction_rate": 0.0
+  },
+  "rag": {
+    "n": 100,
+    "exact_match": 0.72,
+    "token_f1": 0.7693333333333334,
+    "empty_prediction_rate": 0.0
+  },
+  "nnma": {
+    "n": 100,
+    "exact_match": 0.76,
+    "token_f1": 0.8030000000000002,
+    "empty_prediction_rate": 0.0
+  },
+  "random": {
+    "n": 100,
+    "exact_match": 0.5,
+    "token_f1": 0.5563333333333333,
+    "empty_prediction_rate": 0.0
+  },
+  "rag_match": {
+    "n": 100,
+    "exact_match": 0.53,
+    "token_f1": 0.571,
+    "empty_prediction_rate": 0.0,
+    "evidence_tokens_mean": 0.0,
+    "evidence_tokens_median": 0.0,
+    "evidence_tokens_p90": 0.0,
+    "alias_kept_rate": 0.0,
+    "em_when_alias_lost": 0.53,
+    "n_alias_lost": 100,
+    "rag_prompt_tokens_mean": 79.76,
+    "nnma_prompt_tokens_mean": 76.76
+  }
+}
+18:58:19 INFO ============================================================
+18:58:19 INFO SEED 43
+18:58:19 INFO ============================================================
+18:58:36 INFO   seed=43, progressed 10/100 queries
+18:58:57 INFO   seed=43, progressed 20/100 queries
+18:59:12 INFO   seed=43, progressed 30/100 queries
+18:59:30 INFO   seed=43, progressed 40/100 queries
+18:59:50 INFO   seed=43, progressed 50/100 queries
+19:00:08 INFO   seed=43, progressed 60/100 queries
+19:00:27 INFO   seed=43, progressed 70/100 queries
+19:00:44 INFO   seed=43, progressed 80/100 queries
+19:01:07 INFO   seed=43, progressed 90/100 queries
+19:01:26 INFO   seed=43, progressed 100/100 queries
+19:01:26 INFO Seed 43: {
+  "cold": {
+    "n": 100,
+    "exact_match": 0.52,
+    "token_f1": 0.5663333333333334,
+    "empty_prediction_rate": 0.0
+  },
+  "rag": {
+    "n": 100,
+    "exact_match": 0.72,
+    "token_f1": 0.7693333333333334,
+    "empty_prediction_rate": 0.0
+  },
+  "nnma": {
+    "n": 100,
+    "exact_match": 0.76,
+    "token_f1": 0.8030000000000002,
+    "empty_prediction_rate": 0.0
+  },
+  "random": {
+    "n": 100,
+    "exact_match": 0.53,
+    "token_f1": 0.5723333333333334,
+    "empty_prediction_rate": 0.0
+  },
+  "rag_match": {
+    "n": 100,
+    "exact_match": 0.53,
+    "token_f1": 0.571,
+    "empty_prediction_rate": 0.0,
+    "evidence_tokens_mean": 0.0,
+    "evidence_tokens_median": 0.0,
+    "evidence_tokens_p90": 0.0,
+    "alias_kept_rate": 0.0,
+    "em_when_alias_lost": 0.53,
+    "n_alias_lost": 100,
+    "rag_prompt_tokens_mean": 79.76,
+    "nnma_prompt_tokens_mean": 76.76
+  }
+}
+19:01:26 INFO ============================================================
+19:01:26 INFO SEED 44
+19:01:26 INFO ============================================================
+19:01:43 INFO   seed=44, progressed 10/100 queries
+19:02:04 INFO   seed=44, progressed 20/100 queries
+19:02:19 INFO   seed=44, progressed 30/100 queries
+19:02:37 INFO   seed=44, progressed 40/100 queries
+19:02:57 INFO   seed=44, progressed 50/100 queries
+19:03:15 INFO   seed=44, progressed 60/100 queries
+19:03:34 INFO   seed=44, progressed 70/100 queries
+19:03:52 INFO   seed=44, progressed 80/100 queries
+19:04:15 INFO   seed=44, progressed 90/100 queries
+19:04:33 INFO   seed=44, progressed 100/100 queries
+19:04:33 INFO Seed 44: {
+  "cold": {
+    "n": 100,
+    "exact_match": 0.52,
+    "token_f1": 0.5663333333333334,
+    "empty_prediction_rate": 0.0
+  },
+  "rag": {
+    "n": 100,
+    "exact_match": 0.72,
+    "token_f1": 0.7693333333333334,
+    "empty_prediction_rate": 0.0
+  },
+  "nnma": {
+    "n": 100,
+    "exact_match": 0.76,
+    "token_f1": 0.8030000000000002,
+    "empty_prediction_rate": 0.0
+  },
+  "random": {
+    "n": 100,
+    "exact_match": 0.47,
+    "token_f1": 0.5136666666666667,
+    "empty_prediction_rate": 0.0
+  },
+  "rag_match": {
+    "n": 100,
+    "exact_match": 0.53,
+    "token_f1": 0.571,
+    "empty_prediction_rate": 0.0,
+    "evidence_tokens_mean": 0.0,
+    "evidence_tokens_median": 0.0,
+    "evidence_tokens_p90": 0.0,
+    "alias_kept_rate": 0.0,
+    "em_when_alias_lost": 0.53,
+    "n_alias_lost": 100,
+    "rag_prompt_tokens_mean": 79.76,
+    "nnma_prompt_tokens_mean": 76.76
+  }
+}
+19:04:33 INFO ============================================================
+19:04:33 INFO FINAL AGGREGATE (3 seed(s))
+19:04:33 INFO ============================================================
+19:04:33 INFO ARMS: {
+  "cold": {
+    "n": 300,
+    "exact_match": 0.52,
+    "token_f1": 0.5663333333333332,
+    "empty_prediction_rate": 0.0
+  },
+  "rag": {
+    "n": 300,
+    "exact_match": 0.72,
+    "token_f1": 0.7693333333333334,
+    "empty_prediction_rate": 0.0
+  },
+  "nnma": {
+    "n": 300,
+    "exact_match": 0.76,
+    "token_f1": 0.803,
+    "empty_prediction_rate": 0.0
+  },
+  "random": {
+    "n": 300,
+    "exact_match": 0.5,
+    "token_f1": 0.5474444444444445,
+    "empty_prediction_rate": 0.0
+  },
+  "rag_match": {
+    "n": 300,
+    "exact_match": 0.53,
+    "token_f1": 0.5710000000000001,
+    "empty_prediction_rate": 0.0,
+    "evidence_tokens_mean": 0.0,
+    "evidence_tokens_median": 0.0,
+    "evidence_tokens_p90": 0.0,
+    "alias_kept_rate": 0.0,
+    "em_when_alias_lost": 0.53,
+    "n_alias_lost": 300,
+    "rag_prompt_tokens_mean": 79.76,
+    "nnma_prompt_tokens_mean": 76.76
+  }
+}
+19:04:33 INFO PAIRED: {
+  "nnma_vs_rag_match": {
+    "n_paired": 300,
+    "a_only_right": 75,
+    "b_only_right": 6,
+    "discordant_total": 81,
+    "p_value_two_sided": 2.91096598559025e-16
+  },
+  "rag_vs_rag_match": {
+    "n_paired": 300,
+    "a_only_right": 72,
+    "b_only_right": 15,
+    "discordant_total": 87,
+    "p_value_two_sided": 4.260536478846756e-10
+  },
+  "nnma_vs_rag": {
+    "n_paired": 300,
+    "a_only_right": 15,
+    "b_only_right": 3,
+    "discordant_total": 18,
+    "p_value_two_sided": 0.007537841796875
+  }
+}
+19:04:33 INFO Saved to results/nnm_exp17c_20260425_184841

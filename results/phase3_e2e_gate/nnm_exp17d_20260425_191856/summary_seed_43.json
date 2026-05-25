@@ -1,0 +1,80 @@
+{
+  "cold": {
+    "n": 100,
+    "exact_match": 0.52,
+    "token_f1": 0.5663333333333334,
+    "empty_prediction_rate": 0.0
+  },
+  "rag": {
+    "n": 100,
+    "exact_match": 0.72,
+    "token_f1": 0.7693333333333334,
+    "empty_prediction_rate": 0.0
+  },
+  "nnma": {
+    "n": 100,
+    "exact_match": 0.76,
+    "token_f1": 0.8030000000000002,
+    "empty_prediction_rate": 0.0
+  },
+  "rag_short_50": {
+    "n": 100,
+    "exact_match": 0.68,
+    "token_f1": 0.721952380952381,
+    "empty_prediction_rate": 0.0,
+    "evidence_tokens_mean": 50.0,
+    "evidence_tokens_median": 50.0,
+    "evidence_tokens_p90": 50.0,
+    "alias_kept_rate": 0.4,
+    "em_when_alias_kept": 0.925,
+    "n_alias_kept": 40,
+    "em_when_alias_lost": 0.5166666666666667,
+    "n_alias_lost": 60,
+    "rag_prompt_tokens_mean": 129.27
+  },
+  "rag_short_100": {
+    "n": 100,
+    "exact_match": 0.72,
+    "token_f1": 0.7696666666666665,
+    "empty_prediction_rate": 0.0,
+    "evidence_tokens_mean": 100.0,
+    "evidence_tokens_median": 100.0,
+    "evidence_tokens_p90": 100.0,
+    "alias_kept_rate": 0.54,
+    "em_when_alias_kept": 0.8703703703703703,
+    "n_alias_kept": 54,
+    "em_when_alias_lost": 0.5434782608695652,
+    "n_alias_lost": 46,
+    "rag_prompt_tokens_mean": 179.18
+  },
+  "rag_short_200": {
+    "n": 100,
+    "exact_match": 0.75,
+    "token_f1": 0.8013333333333335,
+    "empty_prediction_rate": 0.0,
+    "evidence_tokens_mean": 199.17,
+    "evidence_tokens_median": 200.0,
+    "evidence_tokens_p90": 200.0,
+    "alias_kept_rate": 0.7,
+    "em_when_alias_kept": 0.8285714285714286,
+    "n_alias_kept": 70,
+    "em_when_alias_lost": 0.5666666666666667,
+    "n_alias_lost": 30,
+    "rag_prompt_tokens_mean": 278.41
+  },
+  "rag_short_400": {
+    "n": 100,
+    "exact_match": 0.72,
+    "token_f1": 0.7828571428571428,
+    "empty_prediction_rate": 0.0,
+    "evidence_tokens_mean": 348.83,
+    "evidence_tokens_median": 350.5,
+    "evidence_tokens_p90": 400.0,
+    "alias_kept_rate": 0.74,
+    "em_when_alias_kept": 0.7972972972972973,
+    "n_alias_kept": 74,
+    "em_when_alias_lost": 0.5,
+    "n_alias_lost": 26,
+    "rag_prompt_tokens_mean": 428.11
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "dataset": "scifact",
+  "model": "Qwen/Qwen3-VL-8B-Instruct",
+  "config": {
+    "load_in_4bit": true,
+    "whitening": false,
+    "zscore": false,
+    "prompt": "\"{context}\" Compress the Context in one word:"
+  },
+  "metrics": {
+    "ndcg": {
+      "NDCG@1": 0.22,
+      "NDCG@3": 0.33833,
+      "NDCG@5": 0.37255,
+      "NDCG@10": 0.39667,
+      "NDCG@100": 0.46574,
+      "NDCG@1000": 0.48092
+    },
+    "map": {
+      "MAP@1": 0.194,
+      "MAP@3": 0.29917,
+      "MAP@5": 0.32437,
+      "MAP@10": 0.33446,
+      "MAP@100": 0.34884,
+      "MAP@1000": 0.34959
+    },
+    "recall": {
+      "Recall@1": 0.194,
+      "Recall@3": 0.413,
+      "Recall@5": 0.501,
+      "Recall@10": 0.571,
+      "Recall@100": 0.89,
+      "Recall@1000": 1.0
+    },
+    "precision": {
+      "P@1": 0.22,
+      "P@3": 0.16,
+      "P@5": 0.12,
+      "P@10": 0.068,
+      "P@100": 0.0108,
+      "P@1000": 0.0012
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "dataset": "nfcorpus",
+  "quantize_int8": true,
+  "metrics": {
+    "ndcg": {
+      "NDCG@1": 0.16099,
+      "NDCG@3": 0.14439,
+      "NDCG@5": 0.1388,
+      "NDCG@10": 0.13026,
+      "NDCG@100": 0.14979,
+      "NDCG@1000": 0.24628
+    },
+    "recall": {
+      "Recall@1": 0.02582,
+      "Recall@3": 0.0413,
+      "Recall@5": 0.05605,
+      "Recall@10": 0.0716,
+      "Recall@100": 0.19456,
+      "Recall@1000": 0.50781
+    }
+  },
+  "storage": {
+    "total_mb": 1933.1185684204102,
+    "bytes_per_token": 1536.1101258657104
+  },
+  "time_sec": 401.7527462939979
+}

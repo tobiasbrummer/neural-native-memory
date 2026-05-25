@@ -1,0 +1,126 @@
+20:20:48 INFO args: {'model': 'Qwen/Qwen2.5-7B-Instruct', 'device': None, 'dtype': 'float16', 'local_files_only': False, 'prepend_bos': True, 'split': 'validation', 'max_queries': 50, 'passage_char_limit': 1500, 'max_new_tokens': 32, 'no_think': True, 'seeds': '42'}
+20:20:48 INFO Loading model Qwen/Qwen2.5-7B-Instruct ...
+20:21:08 INFO Model loaded. d_model=3584, n_layers=28, prepend_bos=True
+20:21:08 INFO Detected post-RoPE hook: hook_rot_k
+20:21:08 INFO Loading mandarjoshi/trivia_qa rc split=validation ...
+20:21:08 INFO Full size: 17944
+20:21:08 INFO Picked 50 queries
+20:21:08 INFO ============================================================
+20:21:08 INFO SEED 42
+20:21:08 INFO ============================================================
+20:21:09 INFO Using post-RoPE K hook: hook_rot_k
+20:21:10 INFO Using post-RoPE K hook: hook_rot_k
+20:21:12 INFO Using post-RoPE K hook: hook_rot_k
+20:21:16 INFO Using post-RoPE K hook: hook_rot_k
+20:21:18 INFO Using post-RoPE K hook: hook_rot_k
+20:21:20 INFO   seed=42, 5/50
+20:21:20 INFO Using post-RoPE K hook: hook_rot_k
+20:21:24 INFO Using post-RoPE K hook: hook_rot_k
+20:21:26 INFO Using post-RoPE K hook: hook_rot_k
+20:21:28 INFO Using post-RoPE K hook: hook_rot_k
+20:21:32 INFO Using post-RoPE K hook: hook_rot_k
+20:21:34 INFO   seed=42, 10/50
+20:21:34 INFO Using post-RoPE K hook: hook_rot_k
+20:21:37 INFO Using post-RoPE K hook: hook_rot_k
+20:21:41 INFO Using post-RoPE K hook: hook_rot_k
+20:21:45 INFO Using post-RoPE K hook: hook_rot_k
+20:21:52 INFO Using post-RoPE K hook: hook_rot_k
+20:21:53 INFO   seed=42, 15/50
+20:21:54 INFO Using post-RoPE K hook: hook_rot_k
+20:22:00 INFO Using post-RoPE K hook: hook_rot_k
+20:22:04 INFO Using post-RoPE K hook: hook_rot_k
+20:22:06 INFO Using post-RoPE K hook: hook_rot_k
+20:22:10 INFO Using post-RoPE K hook: hook_rot_k
+20:22:12 INFO   seed=42, 20/50
+20:22:12 INFO Using post-RoPE K hook: hook_rot_k
+20:22:15 INFO Using post-RoPE K hook: hook_rot_k
+20:22:16 INFO Using post-RoPE K hook: hook_rot_k
+20:22:18 INFO Using post-RoPE K hook: hook_rot_k
+20:22:22 INFO Using post-RoPE K hook: hook_rot_k
+20:22:23 INFO   seed=42, 25/50
+20:22:23 INFO Using post-RoPE K hook: hook_rot_k
+20:22:27 INFO Using post-RoPE K hook: hook_rot_k
+20:22:31 INFO Using post-RoPE K hook: hook_rot_k
+20:22:33 INFO Using post-RoPE K hook: hook_rot_k
+20:22:38 INFO Using post-RoPE K hook: hook_rot_k
+20:22:39 INFO   seed=42, 30/50
+20:22:40 INFO Using post-RoPE K hook: hook_rot_k
+20:22:41 INFO Using post-RoPE K hook: hook_rot_k
+20:22:43 INFO Using post-RoPE K hook: hook_rot_k
+20:22:45 INFO Using post-RoPE K hook: hook_rot_k
+20:22:49 INFO Using post-RoPE K hook: hook_rot_k
+20:22:55 INFO   seed=42, 35/50
+20:22:55 INFO Using post-RoPE K hook: hook_rot_k
+20:22:56 INFO Using post-RoPE K hook: hook_rot_k
+20:23:00 INFO Using post-RoPE K hook: hook_rot_k
+20:23:04 INFO Using post-RoPE K hook: hook_rot_k
+20:23:08 INFO Using post-RoPE K hook: hook_rot_k
+20:23:10 INFO   seed=42, 40/50
+20:23:10 INFO Using post-RoPE K hook: hook_rot_k
+20:23:12 INFO Using post-RoPE K hook: hook_rot_k
+20:23:15 INFO Using post-RoPE K hook: hook_rot_k
+20:23:18 INFO Using post-RoPE K hook: hook_rot_k
+20:23:20 INFO Using post-RoPE K hook: hook_rot_k
+20:23:22 INFO   seed=42, 45/50
+20:23:22 INFO Using post-RoPE K hook: hook_rot_k
+20:23:26 INFO Using post-RoPE K hook: hook_rot_k
+20:23:29 INFO Using post-RoPE K hook: hook_rot_k
+20:23:33 INFO Using post-RoPE K hook: hook_rot_k
+20:23:35 INFO Using post-RoPE K hook: hook_rot_k
+20:23:38 INFO   seed=42, 50/50
+20:23:38 INFO ARMS: {
+  "cold": {
+    "n": 50,
+    "exact_match": 0.52,
+    "token_f1": 0.5886666666666666,
+    "empty_prediction_rate": 0.0
+  },
+  "rag": {
+    "n": 50,
+    "exact_match": 0.76,
+    "token_f1": 0.8166666666666665,
+    "empty_prediction_rate": 0.0
+  },
+  "nnma_baseline": {
+    "n": 50,
+    "exact_match": 0.78,
+    "token_f1": 0.8393333333333334,
+    "empty_prediction_rate": 0.0
+  },
+  "nnma_post_rope": {
+    "n": 50,
+    "exact_match": 0.28,
+    "token_f1": 0.36105760294455946,
+    "empty_prediction_rate": 0.0
+  },
+  "nnma_in_chat": {
+    "n": 50,
+    "exact_match": 0.58,
+    "token_f1": 0.668049062049062,
+    "empty_prediction_rate": 0.0
+  }
+}
+20:23:38 INFO PAIRED: {
+  "nnma_baseline_vs_post_rope": {
+    "n_paired": 50,
+    "a_only_right": 26,
+    "b_only_right": 1,
+    "discordant_total": 27,
+    "p_value_two_sided": 4.172325134277344e-07
+  },
+  "nnma_baseline_vs_in_chat": {
+    "n_paired": 50,
+    "a_only_right": 10,
+    "b_only_right": 0,
+    "discordant_total": 10,
+    "p_value_two_sided": 0.001953125
+  },
+  "nnma_post_rope_vs_in_chat": {
+    "n_paired": 50,
+    "a_only_right": 3,
+    "b_only_right": 18,
+    "discordant_total": 21,
+    "p_value_two_sided": 0.0014896392822265625
+  }
+}
+20:23:38 INFO Saved to results/nnm_exp17f_20260425_202048

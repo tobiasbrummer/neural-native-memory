@@ -1,0 +1,3897 @@
+{
+  "cold": [
+    {
+      "arm": "cold",
+      "qid": "qb_4397",
+      "question": "In April 1963, Lester Bowles Pearson became Prime Minister of which country?",
+      "gold_aliases": [
+        "America's top hat",
+        "CANADA",
+        "Canada",
+        "Canada's",
+        "Canada."
+      ],
+      "prediction": "Canada",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qb_8177",
+      "question": "Which US President was born Lesley Lynch King Jr?",
+      "gold_aliases": [
+        "38th President of the United States",
+        "38th president of united states",
+        "Assassination attempts on Gerald Ford",
+        "Birth and life of Gerald Ford",
+        "Ford Administration"
+      ],
+      "prediction": "Gerald R. Ford",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qw_3959",
+      "question": "Rapidly boiling a liquid to make it thicker and more concentrated is called what?",
+      "gold_aliases": [
+        "Reduce",
+        "Reduced",
+        "Reduces",
+        "Reducibility",
+        "Reducible"
+      ],
+      "prediction": "Reducing",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qf_1138",
+      "question": "8Â  Fort Ville-Marie was the original name of which Canadian city?",
+      "gold_aliases": [
+        "City of Montreal",
+        "City of Montréal",
+        "Funtreal",
+        "MontrA(c)al",
+        "Montrea"
+      ],
+      "prediction": "Montreal",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qw_12369",
+      "question": "\"What year did Jean-Francois Champollion publish the first correct translation of Egyptian hieroglyphs from the Rosetta Stone, the Roman Catholic Church take Galileo Galilei's \"\"Dialogue\"\" off their list of banned books, and Britain repeal the death penalty for over 100 crimes?\"",
+      "gold_aliases": [
+        "1822",
+        "one thousand eight hundred and twenty two",
+        "one thousand, eight hundred and twenty-two"
+      ],
+      "prediction": "1822",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "wh_4199",
+      "question": "What is Marge Simpson's maiden name ?",
+      "gold_aliases": [
+        "A. Bouvier",
+        "AUGUSTUS JULES BOUVIER (1837-81)",
+        "Augustus Jules Bouvier",
+        "BOUVIER",
+        "augustus jules bouvier"
+      ],
+      "prediction": "Simpson",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "tc_2020",
+      "question": "What percentage of the earth's surface is covered by Europe?",
+      "gold_aliases": [
+        "8",
+        "8 %",
+        "8%",
+        "eight",
+        "eight  %"
+      ],
+      "prediction": "6.8%",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "odql_2576",
+      "question": "Which famous fishing town of east Scotland lies roughly half-way between Montrose and Dundee?",
+      "gold_aliases": [
+        "ARBROATH",
+        "Aberbrothock",
+        "Arbraoth, Angus",
+        "Arbraoth, Forfarshire",
+        "Arbroath"
+      ],
+      "prediction": "Arbroath",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "wh_752",
+      "question": "Which was the first commercial jet airliner to go into service in the UK?",
+      "gold_aliases": [
+        "A1 comet",
+        "Black comets",
+        "COMET",
+        "Coma (astronomy)",
+        "Coma (comet)"
+      ],
+      "prediction": "De Havilland Comet",
+      "em": 0,
+      "f1": 0.5,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "bb_3998",
+      "question": "The word Tet in the Tet Offensive (N Vietnam/Viet Cong against S Vietnam/US forces on 30 Jan 1968) referred to the national?",
+      "gold_aliases": [
+        "Annunciation Style",
+        "Annunciation Style dating",
+        "Annunciation style",
+        "Annunciation style dating",
+        "New Year"
+      ],
+      "prediction": "Tet New Year",
+      "em": 0,
+      "f1": 0.8,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qw_15912",
+      "question": "What are marram, fescue, and rye?",
+      "gold_aliases": [
+        "Types of grass",
+        "types of grass"
+      ],
+      "prediction": "Grasses",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "odql_12021",
+      "question": "What was the name of politician Cecil Parkinson's mistress and mother of his child?",
+      "gold_aliases": [
+        "Sarah Keays",
+        "sarah keays"
+      ],
+      "prediction": "Joan Bakewell",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qw_8396",
+      "question": "\"What organisation was founded in 1831 by James Winston, Samuel James Arnold, Samuel Beazley, Sir Andrew Francis Barnard, and Francis Mills to \"\"tend to the regeneration of the Drama\"\"?\"",
+      "gold_aliases": [
+        "Garrick Club",
+        "The Garrick",
+        "The Garrick Club",
+        "garrick",
+        "garrick club"
+      ],
+      "prediction": "The Dramatic Society",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "odql_981",
+      "question": "Which famous British actor is/was married to Anouk Aimee?",
+      "gold_aliases": [
+        "ALBERT FINNEY",
+        "Albert Finney",
+        "albert finney"
+      ],
+      "prediction": "Laurence Olivier",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "sfq_18918",
+      "question": "The River Durance flows into the Rhone near to which French town or city?",
+      "gold_aliases": [
+        "Avignon",
+        "Avignon, France",
+        "Historic Centre of Avignon: Papal Palace, Episcopal Ensemble and Avignon Bridge",
+        "Popes of Avignon",
+        "The weather in Avignon"
+      ],
+      "prediction": "Avignon",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qw_14484",
+      "question": "What would you expect if you asked for Focaccia in an Italian restaurant?",
+      "gold_aliases": [
+        "Ammunition bread",
+        "Batch bread",
+        "Bread",
+        "Bread Making",
+        "Bread crust"
+      ],
+      "prediction": "Flatbread topped with olive oil, garlic, and sometimes cheese.",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "odql_409",
+      "question": "'Professor Cuthbert Calculus' is an associate of which character?",
+      "gold_aliases": [
+        "'TINTIN'",
+        "TINTIN",
+        "Tin Tin",
+        "Tin tin",
+        "Tin-Tin"
+      ],
+      "prediction": "Snoopy",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "bt_2590",
+      "question": "Who had a top album in 1985 with Like A Virgin",
+      "gold_aliases": [
+        "Madonna",
+        "Madonna (album) (disambiguation)",
+        "Madonna (disambiguation)",
+        "Madonna (film)",
+        "madonna"
+      ],
+      "prediction": "Madonna",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qw_6822",
+      "question": "Formula 1 driver Ayrton Senna died while leading the 1994 San Marino Grand Prix at which motor racing circuit?",
+      "gold_aliases": [
+        "Forum Cornelii",
+        "Imola",
+        "Imolensis",
+        "Rocca Sforzesca",
+        "forum cornelii"
+      ],
+      "prediction": "Imola Circuit",
+      "em": 0,
+      "f1": 0.6666666666666666,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qw_3159",
+      "question": "What spirit, in Ireland and Scotland, makes noises near a house when someone is about to die?",
+      "gold_aliases": [
+        "Bahr geist",
+        "Ban side",
+        "Ban-sith",
+        "Ban-sìth",
+        "Banshee"
+      ],
+      "prediction": "Knock Knock",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "wh_2023",
+      "question": "Which Frenchman, a football administrator and head of FIFA from 1921 to1954 is regarded as the founder of the football World Cup?",
+      "gold_aliases": [
+        "JULES RIMET",
+        "Jules Rimet",
+        "jules rimet"
+      ],
+      "prediction": "Jules Rimet",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qg_848",
+      "question": "Star Trek: TOS was cancelled in 1969 after how many years on the air?",
+      "gold_aliases": [
+        "3",
+        "three"
+      ],
+      "prediction": "3",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "sfq_1803",
+      "question": "New Zealander Jack Lovelock gained fame in the1930's in which field?",
+      "gold_aliases": [
+        "ATHLETICS",
+        "Athletics",
+        "Athletics (disambiguation)",
+        "Athletics (overview)",
+        "Athletics (sports)"
+      ],
+      "prediction": "Athletics",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "dpql_3797",
+      "question": "John Hannah and Ken Stott have both appeared in the role of which fictional detective?",
+      "gold_aliases": [
+        "DI John Rebus",
+        "DI Rebus",
+        "Detective Inspector John Rebus",
+        "Detective Inspector Rebus",
+        "Detective Sergeant John Rebus"
+      ],
+      "prediction": "Inspector Morse",
+      "em": 0,
+      "f1": 0.4,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qb_9945",
+      "question": "Who was elected US President in November 2012?",
+      "gold_aliases": [
+        "0bama",
+        "2008 Democratic Presidential Nominee",
+        "2008 democratic presidential nominee",
+        "44th President of the United States",
+        "44th president of the united states of america"
+      ],
+      "prediction": "Barack Obama",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "odql_1627",
+      "question": "Christina Kirchner was elected as the first female President of which South American country, in 2007?",
+      "gold_aliases": [
+        "ARGENTINA",
+        "Airgintin",
+        "Airgintín",
+        "Antonia Merce Y Luque",
+        "Arc'hantina"
+      ],
+      "prediction": "Argentina",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "tc_2564",
+      "question": "Who proclaimed the People's Republic of China in 1949?",
+      "gold_aliases": [
+        "Chairman Mao",
+        "Chairman Mao Tse-tung",
+        "Chairman Mao Zedong",
+        "Chairman of the Politburo and Secretariat",
+        "Early life of Mao"
+      ],
+      "prediction": "Mao Zedong",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qw_4545",
+      "question": "Australian Shane Warne is associated with which sport?",
+      "gold_aliases": [
+        "Amateur cricket",
+        "Amature cricket",
+        "Coin toss (cricket)",
+        "Creag",
+        "Cricket"
+      ],
+      "prediction": "Cricket",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "sfq_10250",
+      "question": "Which is the only mythical creature found in the Chinese zodiac?",
+      "gold_aliases": [
+        "DRAGON",
+        "Dragon",
+        "Dragon Types",
+        "Dragon facts",
+        "Dragon skull"
+      ],
+      "prediction": "Dragon",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "tc_276",
+      "question": "Who had an 80s No 1 hit with Hold On To The Nights?",
+      "gold_aliases": [
+        "Richard Marx",
+        "Richard Noel Marx",
+        "richard marx",
+        "richard noel marx"
+      ],
+      "prediction": "Cyndi Lauper",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "sfq_12322",
+      "question": "Elizabeth Gaskill based her fictional village 'Cranford' on which place in Cheshire?",
+      "gold_aliases": [
+        "High Legh Primary School",
+        "High Legh primary shool",
+        "KNUTSFORD",
+        "Knutsford",
+        "Knuttesford"
+      ],
+      "prediction": "Nantwich",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "sfq_23069",
+      "question": "How many coloured squares are there on the surface of a Rubik's cube?",
+      "gold_aliases": [
+        "54",
+        "fifty four",
+        "fifty-four"
+      ],
+      "prediction": "6",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "wh_3204",
+      "question": "The book The Red badge of Courage was set during which war?",
+      "gold_aliases": [
+        "AMERICAN CIVIL WAR",
+        "American Civil War",
+        "American Civil war",
+        "American Secession War",
+        "American States Secession War"
+      ],
+      "prediction": "American Civil War",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qw_2235",
+      "question": "What 2009 hit record by Lily Allen concerns her boyfriend's performance in the bedroom?",
+      "gold_aliases": [
+        "Not Fair",
+        "Not Fair (Lily Allen song)",
+        "Not Fair (song)",
+        "not fair",
+        "not fair lily allen song"
+      ],
+      "prediction": "The Love Song",
+      "em": 0,
+      "f1": 0.4,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qw_11069",
+      "question": "What does a querulous person do?",
+      "gold_aliases": [
+        "Amended complaint",
+        "Bitching",
+        "Carped",
+        "Carpers",
+        "Carping"
+      ],
+      "prediction": "Complains frequently.",
+      "em": 0,
+      "f1": 0.6666666666666666,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "bb_8948",
+      "question": "Annually in July or August, the Obon (or Bon) Buddhist festival to honour the dead is held in which country?",
+      "gold_aliases": [
+        "Etymology of Japan",
+        "ISO 3166-1:JP",
+        "JAPAN",
+        "JPN",
+        "Ja-pan"
+      ],
+      "prediction": "Japan",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qg_3384",
+      "question": "In Norse mythology, what group of female figures decides who lives and dies during battle, and then transports half of the dead to Valhalla?",
+      "gold_aliases": [
+        "Choosers of the Slain",
+        "Choosers of the slain",
+        "Goell",
+        "Gol (Valkyrie)",
+        "Goll (Valkyrie)"
+      ],
+      "prediction": "The Valkyries",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "jp_3913",
+      "question": "Who did Friedrich Engels famously work with?",
+      "gold_aliases": [
+        "Carl Heinrich Marx",
+        "Carl Marks",
+        "Carl Marx",
+        "Father of Communism",
+        "K Marx"
+      ],
+      "prediction": "Karl Marx",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qw_2015",
+      "question": "Which island has belonged to Carthage, Rome, the Saracens, the King of Aragon, the Dukes of Savoy, United Italy under Victor Emmanuel and was granted autonomous government in 1947?",
+      "gold_aliases": [
+        "Sardegna",
+        "Sardic",
+        "Sardigna",
+        "Sardinia",
+        "Sardinia (Italy)"
+      ],
+      "prediction": "Sardinia",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "sfq_699",
+      "question": "Which American scene artist painted 'Cape Cod Evening'?",
+      "gold_aliases": [
+        "Edward Hopper",
+        "Girlie Show (painting)",
+        "Hopper, Edward",
+        "Hopperesque",
+        "edward hopper"
+      ],
+      "prediction": "Childe Hassam",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "dpql_1576",
+      "question": "What would a polyandric woman have more than one of?",
+      "gold_aliases": [
+        "HUSBAND",
+        "The Husband",
+        "husband"
+      ],
+      "prediction": "husbands",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "odql_1921",
+      "question": "Which writer created the detective Charlie Chan?",
+      "gold_aliases": [
+        "EARL DERR BIGGERS",
+        "Earl Biggers",
+        "Earl Derr Biggers",
+        "earl biggers",
+        "earl derr biggers"
+      ],
+      "prediction": "Dashiell Hammett",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "sfq_24591",
+      "question": "In 1919, which Dadaist created L.H.O.O.Q., a parody of the Mona Lisa, in which a moustache and goatee beard were added to a reproduction of the painting?",
+      "gold_aliases": [
+        "Duchamp",
+        "Duchampian",
+        "Henri-Robert-Marcel Duchamp",
+        "Marcel Duchamp",
+        "Marcel du Champ"
+      ],
+      "prediction": "Marcel Duchamp",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "sfq_13540",
+      "question": "In which year was Sputnik, the first man-made satellite, launched?",
+      "gold_aliases": [
+        "1957",
+        "one thousand nine hundred and fifty seven",
+        "one thousand, nine hundred and fifty-seven"
+      ],
+      "prediction": "1957",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "wh_1283",
+      "question": "Which war veterna, who died in 2009 had the nickname 'The Last Fighting Tommy'?",
+      "gold_aliases": [
+        "HARRY PATCH",
+        "Harry Patch",
+        "Henry John Patch",
+        "harry patch",
+        "henry john patch"
+      ],
+      "prediction": "Tommy Franks",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "dpql_3013",
+      "question": "In 1934, local miners in Ashington, Northumberland, formed a group to study what?",
+      "gold_aliases": [
+        "A.R.T.",
+        "ART",
+        "ART (disambiguation)",
+        "art",
+        "art disambiguation"
+      ],
+      "prediction": "Miners' Lamp Fund",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "qf_3005",
+      "question": "Beethoven wrote only one opera, can you name it?",
+      "gold_aliases": [
+        "Fidelio",
+        "Fidelio, Opus 72c (Beethoven)",
+        "Leonora Overtures",
+        "Leonore",
+        "Leonore I"
+      ],
+      "prediction": "Fidelio",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "sfq_10873",
+      "question": "What is the collective name for a group of hawks or falcons?",
+      "gold_aliases": [
+        "CAST",
+        "CAST (disambiguation)",
+        "cast",
+        "cast disambiguation"
+      ],
+      "prediction": "Kettle",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "sfq_13847",
+      "question": "Which Norwegian firm supposedly produced the first fleece fabrics in the 1960s?",
+      "gold_aliases": [
+        "Helly Hansen",
+        "Helly Juell Hansen",
+        "Helly-Hansen",
+        "helly hansen",
+        "helly juell hansen"
+      ],
+      "prediction": "Helly Hansen",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "cold",
+      "qid": "dpql_1068",
+      "question": "Which American resort is nicknamed 'Sin City'?",
+      "gold_aliases": [
+        "City of Las Vegas",
+        "LV, NV",
+        "Las Vegas",
+        "Las Vegas (NV)",
+        "Las Vegas City Council"
+      ],
+      "prediction": "Las Vegas",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    }
+  ],
+  "rag": [
+    {
+      "arm": "rag",
+      "qid": "qb_4397",
+      "question": "In April 1963, Lester Bowles Pearson became Prime Minister of which country?",
+      "gold_aliases": [
+        "America's top hat",
+        "CANADA",
+        "Canada",
+        "Canada's",
+        "Canada."
+      ],
+      "prediction": "Canada",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qb_8177",
+      "question": "Which US President was born Lesley Lynch King Jr?",
+      "gold_aliases": [
+        "38th President of the United States",
+        "38th president of united states",
+        "Assassination attempts on Gerald Ford",
+        "Birth and life of Gerald Ford",
+        "Ford Administration"
+      ],
+      "prediction": "Gerald Ford",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qw_3959",
+      "question": "Rapidly boiling a liquid to make it thicker and more concentrated is called what?",
+      "gold_aliases": [
+        "Reduce",
+        "Reduced",
+        "Reduces",
+        "Reducibility",
+        "Reducible"
+      ],
+      "prediction": "Reducing",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qf_1138",
+      "question": "8Â  Fort Ville-Marie was the original name of which Canadian city?",
+      "gold_aliases": [
+        "City of Montreal",
+        "City of Montréal",
+        "Funtreal",
+        "MontrA(c)al",
+        "Montrea"
+      ],
+      "prediction": "Montreal",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qw_12369",
+      "question": "\"What year did Jean-Francois Champollion publish the first correct translation of Egyptian hieroglyphs from the Rosetta Stone, the Roman Catholic Church take Galileo Galilei's \"\"Dialogue\"\" off their list of banned books, and Britain repeal the death penalty for over 100 crimes?\"",
+      "gold_aliases": [
+        "1822",
+        "one thousand eight hundred and twenty two",
+        "one thousand, eight hundred and twenty-two"
+      ],
+      "prediction": "1822",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "wh_4199",
+      "question": "What is Marge Simpson's maiden name ?",
+      "gold_aliases": [
+        "A. Bouvier",
+        "AUGUSTUS JULES BOUVIER (1837-81)",
+        "Augustus Jules Bouvier",
+        "BOUVIER",
+        "augustus jules bouvier"
+      ],
+      "prediction": "Bouvier",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "tc_2020",
+      "question": "What percentage of the earth's surface is covered by Europe?",
+      "gold_aliases": [
+        "8",
+        "8 %",
+        "8%",
+        "eight",
+        "eight  %"
+      ],
+      "prediction": "2%",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "odql_2576",
+      "question": "Which famous fishing town of east Scotland lies roughly half-way between Montrose and Dundee?",
+      "gold_aliases": [
+        "ARBROATH",
+        "Aberbrothock",
+        "Arbraoth, Angus",
+        "Arbraoth, Forfarshire",
+        "Arbroath"
+      ],
+      "prediction": "Arbroath",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "wh_752",
+      "question": "Which was the first commercial jet airliner to go into service in the UK?",
+      "gold_aliases": [
+        "A1 comet",
+        "Black comets",
+        "COMET",
+        "Coma (astronomy)",
+        "Coma (comet)"
+      ],
+      "prediction": "de Havilland Comet",
+      "em": 0,
+      "f1": 0.5,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "bb_3998",
+      "question": "The word Tet in the Tet Offensive (N Vietnam/Viet Cong against S Vietnam/US forces on 30 Jan 1968) referred to the national?",
+      "gold_aliases": [
+        "Annunciation Style",
+        "Annunciation Style dating",
+        "Annunciation style",
+        "Annunciation style dating",
+        "New Year"
+      ],
+      "prediction": "national holiday",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qw_15912",
+      "question": "What are marram, fescue, and rye?",
+      "gold_aliases": [
+        "Types of grass",
+        "types of grass"
+      ],
+      "prediction": "Types of grass",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "odql_12021",
+      "question": "What was the name of politician Cecil Parkinson's mistress and mother of his child?",
+      "gold_aliases": [
+        "Sarah Keays",
+        "sarah keays"
+      ],
+      "prediction": "Sarah Keays",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qw_8396",
+      "question": "\"What organisation was founded in 1831 by James Winston, Samuel James Arnold, Samuel Beazley, Sir Andrew Francis Barnard, and Francis Mills to \"\"tend to the regeneration of the Drama\"\"?\"",
+      "gold_aliases": [
+        "Garrick Club",
+        "The Garrick",
+        "The Garrick Club",
+        "garrick",
+        "garrick club"
+      ],
+      "prediction": "The Garrick Club",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "odql_981",
+      "question": "Which famous British actor is/was married to Anouk Aimee?",
+      "gold_aliases": [
+        "ALBERT FINNEY",
+        "Albert Finney",
+        "albert finney"
+      ],
+      "prediction": "No information provided about which famous British actor is/was married to Anouk Aimee.",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "sfq_18918",
+      "question": "The River Durance flows into the Rhone near to which French town or city?",
+      "gold_aliases": [
+        "Avignon",
+        "Avignon, France",
+        "Historic Centre of Avignon: Papal Palace, Episcopal Ensemble and Avignon Bridge",
+        "Popes of Avignon",
+        "The weather in Avignon"
+      ],
+      "prediction": "Avignon",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qw_14484",
+      "question": "What would you expect if you asked for Focaccia in an Italian restaurant?",
+      "gold_aliases": [
+        "Ammunition bread",
+        "Batch bread",
+        "Bread",
+        "Bread Making",
+        "Bread crust"
+      ],
+      "prediction": "Breaddish",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "odql_409",
+      "question": "'Professor Cuthbert Calculus' is an associate of which character?",
+      "gold_aliases": [
+        "'TINTIN'",
+        "TINTIN",
+        "Tin Tin",
+        "Tin tin",
+        "Tin-Tin"
+      ],
+      "prediction": "Tintin",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "bt_2590",
+      "question": "Who had a top album in 1985 with Like A Virgin",
+      "gold_aliases": [
+        "Madonna",
+        "Madonna (album) (disambiguation)",
+        "Madonna (disambiguation)",
+        "Madonna (film)",
+        "madonna"
+      ],
+      "prediction": "Madonna",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qw_6822",
+      "question": "Formula 1 driver Ayrton Senna died while leading the 1994 San Marino Grand Prix at which motor racing circuit?",
+      "gold_aliases": [
+        "Forum Cornelii",
+        "Imola",
+        "Imolensis",
+        "Rocca Sforzesca",
+        "forum cornelii"
+      ],
+      "prediction": "Imola circuit",
+      "em": 0,
+      "f1": 0.6666666666666666,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qw_3159",
+      "question": "What spirit, in Ireland and Scotland, makes noises near a house when someone is about to die?",
+      "gold_aliases": [
+        "Bahr geist",
+        "Ban side",
+        "Ban-sith",
+        "Ban-sìth",
+        "Banshee"
+      ],
+      "prediction": "Piskey",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "wh_2023",
+      "question": "Which Frenchman, a football administrator and head of FIFA from 1921 to1954 is regarded as the founder of the football World Cup?",
+      "gold_aliases": [
+        "JULES RIMET",
+        "Jules Rimet",
+        "jules rimet"
+      ],
+      "prediction": "Jules Rimet",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qg_848",
+      "question": "Star Trek: TOS was cancelled in 1969 after how many years on the air?",
+      "gold_aliases": [
+        "3",
+        "three"
+      ],
+      "prediction": "3",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "sfq_1803",
+      "question": "New Zealander Jack Lovelock gained fame in the1930's in which field?",
+      "gold_aliases": [
+        "ATHLETICS",
+        "Athletics",
+        "Athletics (disambiguation)",
+        "Athletics (overview)",
+        "Athletics (sports)"
+      ],
+      "prediction": "Athletics",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "dpql_3797",
+      "question": "John Hannah and Ken Stott have both appeared in the role of which fictional detective?",
+      "gold_aliases": [
+        "DI John Rebus",
+        "DI Rebus",
+        "Detective Inspector John Rebus",
+        "Detective Inspector Rebus",
+        "Detective Sergeant John Rebus"
+      ],
+      "prediction": "Rebus",
+      "em": 0,
+      "f1": 0.6666666666666666,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qb_9945",
+      "question": "Who was elected US President in November 2012?",
+      "gold_aliases": [
+        "0bama",
+        "2008 Democratic Presidential Nominee",
+        "2008 democratic presidential nominee",
+        "44th President of the United States",
+        "44th president of the united states of america"
+      ],
+      "prediction": "Barack Obama",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "odql_1627",
+      "question": "Christina Kirchner was elected as the first female President of which South American country, in 2007?",
+      "gold_aliases": [
+        "ARGENTINA",
+        "Airgintin",
+        "Airgintín",
+        "Antonia Merce Y Luque",
+        "Arc'hantina"
+      ],
+      "prediction": "Argentina",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "tc_2564",
+      "question": "Who proclaimed the People's Republic of China in 1949?",
+      "gold_aliases": [
+        "Chairman Mao",
+        "Chairman Mao Tse-tung",
+        "Chairman Mao Zedong",
+        "Chairman of the Politburo and Secretariat",
+        "Early life of Mao"
+      ],
+      "prediction": "Mao Zedong",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qw_4545",
+      "question": "Australian Shane Warne is associated with which sport?",
+      "gold_aliases": [
+        "Amateur cricket",
+        "Amature cricket",
+        "Coin toss (cricket)",
+        "Creag",
+        "Cricket"
+      ],
+      "prediction": "Cricket",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "sfq_10250",
+      "question": "Which is the only mythical creature found in the Chinese zodiac?",
+      "gold_aliases": [
+        "DRAGON",
+        "Dragon",
+        "Dragon Types",
+        "Dragon facts",
+        "Dragon skull"
+      ],
+      "prediction": "Dragon",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "tc_276",
+      "question": "Who had an 80s No 1 hit with Hold On To The Nights?",
+      "gold_aliases": [
+        "Richard Marx",
+        "Richard Noel Marx",
+        "richard marx",
+        "richard noel marx"
+      ],
+      "prediction": "Richard Marx",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "sfq_12322",
+      "question": "Elizabeth Gaskill based her fictional village 'Cranford' on which place in Cheshire?",
+      "gold_aliases": [
+        "High Legh Primary School",
+        "High Legh primary shool",
+        "KNUTSFORD",
+        "Knutsford",
+        "Knuttesford"
+      ],
+      "prediction": "Knutsford",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "sfq_23069",
+      "question": "How many coloured squares are there on the surface of a Rubik's cube?",
+      "gold_aliases": [
+        "54",
+        "fifty four",
+        "fifty-four"
+      ],
+      "prediction": "54",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "wh_3204",
+      "question": "The book The Red badge of Courage was set during which war?",
+      "gold_aliases": [
+        "AMERICAN CIVIL WAR",
+        "American Civil War",
+        "American Civil war",
+        "American Secession War",
+        "American States Secession War"
+      ],
+      "prediction": "American Civil War",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qw_2235",
+      "question": "What 2009 hit record by Lily Allen concerns her boyfriend's performance in the bedroom?",
+      "gold_aliases": [
+        "Not Fair",
+        "Not Fair (Lily Allen song)",
+        "Not Fair (song)",
+        "not fair",
+        "not fair lily allen song"
+      ],
+      "prediction": "\"Not Fair\"",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qw_11069",
+      "question": "What does a querulous person do?",
+      "gold_aliases": [
+        "Amended complaint",
+        "Bitching",
+        "Carped",
+        "Carpers",
+        "Carping"
+      ],
+      "prediction": "Complains frequently.",
+      "em": 0,
+      "f1": 0.6666666666666666,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "bb_8948",
+      "question": "Annually in July or August, the Obon (or Bon) Buddhist festival to honour the dead is held in which country?",
+      "gold_aliases": [
+        "Etymology of Japan",
+        "ISO 3166-1:JP",
+        "JAPAN",
+        "JPN",
+        "Ja-pan"
+      ],
+      "prediction": "Japan",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qg_3384",
+      "question": "In Norse mythology, what group of female figures decides who lives and dies during battle, and then transports half of the dead to Valhalla?",
+      "gold_aliases": [
+        "Choosers of the Slain",
+        "Choosers of the slain",
+        "Goell",
+        "Gol (Valkyrie)",
+        "Goll (Valkyrie)"
+      ],
+      "prediction": "Valkyries",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "jp_3913",
+      "question": "Who did Friedrich Engels famously work with?",
+      "gold_aliases": [
+        "Carl Heinrich Marx",
+        "Carl Marks",
+        "Carl Marx",
+        "Father of Communism",
+        "K Marx"
+      ],
+      "prediction": "Karl Marx",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qw_2015",
+      "question": "Which island has belonged to Carthage, Rome, the Saracens, the King of Aragon, the Dukes of Savoy, United Italy under Victor Emmanuel and was granted autonomous government in 1947?",
+      "gold_aliases": [
+        "Sardegna",
+        "Sardic",
+        "Sardigna",
+        "Sardinia",
+        "Sardinia (Italy)"
+      ],
+      "prediction": "Sardinia",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "sfq_699",
+      "question": "Which American scene artist painted 'Cape Cod Evening'?",
+      "gold_aliases": [
+        "Edward Hopper",
+        "Girlie Show (painting)",
+        "Hopper, Edward",
+        "Hopperesque",
+        "edward hopper"
+      ],
+      "prediction": "Edward Hopper",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "dpql_1576",
+      "question": "What would a polyandric woman have more than one of?",
+      "gold_aliases": [
+        "HUSBAND",
+        "The Husband",
+        "husband"
+      ],
+      "prediction": "husbands",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "odql_1921",
+      "question": "Which writer created the detective Charlie Chan?",
+      "gold_aliases": [
+        "EARL DERR BIGGERS",
+        "Earl Biggers",
+        "Earl Derr Biggers",
+        "earl biggers",
+        "earl derr biggers"
+      ],
+      "prediction": "Earl Derr Biggers",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "sfq_24591",
+      "question": "In 1919, which Dadaist created L.H.O.O.Q., a parody of the Mona Lisa, in which a moustache and goatee beard were added to a reproduction of the painting?",
+      "gold_aliases": [
+        "Duchamp",
+        "Duchampian",
+        "Henri-Robert-Marcel Duchamp",
+        "Marcel Duchamp",
+        "Marcel du Champ"
+      ],
+      "prediction": "Marcel Duchamp",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "sfq_13540",
+      "question": "In which year was Sputnik, the first man-made satellite, launched?",
+      "gold_aliases": [
+        "1957",
+        "one thousand nine hundred and fifty seven",
+        "one thousand, nine hundred and fifty-seven"
+      ],
+      "prediction": "1957",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "wh_1283",
+      "question": "Which war veterna, who died in 2009 had the nickname 'The Last Fighting Tommy'?",
+      "gold_aliases": [
+        "HARRY PATCH",
+        "Harry Patch",
+        "Henry John Patch",
+        "harry patch",
+        "henry john patch"
+      ],
+      "prediction": "Harry Patch",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "dpql_3013",
+      "question": "In 1934, local miners in Ashington, Northumberland, formed a group to study what?",
+      "gold_aliases": [
+        "A.R.T.",
+        "ART",
+        "ART (disambiguation)",
+        "art",
+        "art disambiguation"
+      ],
+      "prediction": "Miners' Welfare",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "qf_3005",
+      "question": "Beethoven wrote only one opera, can you name it?",
+      "gold_aliases": [
+        "Fidelio",
+        "Fidelio, Opus 72c (Beethoven)",
+        "Leonora Overtures",
+        "Leonore",
+        "Leonore I"
+      ],
+      "prediction": "Fidelio",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "sfq_10873",
+      "question": "What is the collective name for a group of hawks or falcons?",
+      "gold_aliases": [
+        "CAST",
+        "CAST (disambiguation)",
+        "cast",
+        "cast disambiguation"
+      ],
+      "prediction": "A cast of hawks [or falcons]",
+      "em": 0,
+      "f1": 0.33333333333333337,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "sfq_13847",
+      "question": "Which Norwegian firm supposedly produced the first fleece fabrics in the 1960s?",
+      "gold_aliases": [
+        "Helly Hansen",
+        "Helly Juell Hansen",
+        "Helly-Hansen",
+        "helly hansen",
+        "helly juell hansen"
+      ],
+      "prediction": "Helly Hansen",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "rag",
+      "qid": "dpql_1068",
+      "question": "Which American resort is nicknamed 'Sin City'?",
+      "gold_aliases": [
+        "City of Las Vegas",
+        "LV, NV",
+        "Las Vegas",
+        "Las Vegas (NV)",
+        "Las Vegas City Council"
+      ],
+      "prediction": "Las Vegas",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    }
+  ],
+  "nnma_baseline": [
+    {
+      "arm": "nnma_baseline",
+      "qid": "qb_4397",
+      "question": "In April 1963, Lester Bowles Pearson became Prime Minister of which country?",
+      "gold_aliases": [
+        "America's top hat",
+        "CANADA",
+        "Canada",
+        "Canada's",
+        "Canada."
+      ],
+      "prediction": "Canada",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qb_8177",
+      "question": "Which US President was born Lesley Lynch King Jr?",
+      "gold_aliases": [
+        "38th President of the United States",
+        "38th president of united states",
+        "Assassination attempts on Gerald Ford",
+        "Birth and life of Gerald Ford",
+        "Ford Administration"
+      ],
+      "prediction": "Gerald Ford",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qw_3959",
+      "question": "Rapidly boiling a liquid to make it thicker and more concentrated is called what?",
+      "gold_aliases": [
+        "Reduce",
+        "Reduced",
+        "Reduces",
+        "Reducibility",
+        "Reducible"
+      ],
+      "prediction": "Reducing",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qf_1138",
+      "question": "8Â  Fort Ville-Marie was the original name of which Canadian city?",
+      "gold_aliases": [
+        "City of Montreal",
+        "City of Montréal",
+        "Funtreal",
+        "MontrA(c)al",
+        "Montrea"
+      ],
+      "prediction": "Montreal",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qw_12369",
+      "question": "\"What year did Jean-Francois Champollion publish the first correct translation of Egyptian hieroglyphs from the Rosetta Stone, the Roman Catholic Church take Galileo Galilei's \"\"Dialogue\"\" off their list of banned books, and Britain repeal the death penalty for over 100 crimes?\"",
+      "gold_aliases": [
+        "1822",
+        "one thousand eight hundred and twenty two",
+        "one thousand, eight hundred and twenty-two"
+      ],
+      "prediction": "1822",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "wh_4199",
+      "question": "What is Marge Simpson's maiden name ?",
+      "gold_aliases": [
+        "A. Bouvier",
+        "AUGUSTUS JULES BOUVIER (1837-81)",
+        "Augustus Jules Bouvier",
+        "BOUVIER",
+        "augustus jules bouvier"
+      ],
+      "prediction": "Bouvier",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "tc_2020",
+      "question": "What percentage of the earth's surface is covered by Europe?",
+      "gold_aliases": [
+        "8",
+        "8 %",
+        "8%",
+        "eight",
+        "eight  %"
+      ],
+      "prediction": "7.7%",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "odql_2576",
+      "question": "Which famous fishing town of east Scotland lies roughly half-way between Montrose and Dundee?",
+      "gold_aliases": [
+        "ARBROATH",
+        "Aberbrothock",
+        "Arbraoth, Angus",
+        "Arbraoth, Forfarshire",
+        "Arbroath"
+      ],
+      "prediction": "Arbroath",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "wh_752",
+      "question": "Which was the first commercial jet airliner to go into service in the UK?",
+      "gold_aliases": [
+        "A1 comet",
+        "Black comets",
+        "COMET",
+        "Coma (astronomy)",
+        "Coma (comet)"
+      ],
+      "prediction": "De Havilland Comet",
+      "em": 0,
+      "f1": 0.5,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "bb_3998",
+      "question": "The word Tet in the Tet Offensive (N Vietnam/Viet Cong against S Vietnam/US forces on 30 Jan 1968) referred to the national?",
+      "gold_aliases": [
+        "Annunciation Style",
+        "Annunciation Style dating",
+        "Annunciation style",
+        "Annunciation style dating",
+        "New Year"
+      ],
+      "prediction": "Vietnamese New Year",
+      "em": 0,
+      "f1": 0.8,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qw_15912",
+      "question": "What are marram, fescue, and rye?",
+      "gold_aliases": [
+        "Types of grass",
+        "types of grass"
+      ],
+      "prediction": "Grasses",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "odql_12021",
+      "question": "What was the name of politician Cecil Parkinson's mistress and mother of his child?",
+      "gold_aliases": [
+        "Sarah Keays",
+        "sarah keays"
+      ],
+      "prediction": "Sarah Keays",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qw_8396",
+      "question": "\"What organisation was founded in 1831 by James Winston, Samuel James Arnold, Samuel Beazley, Sir Andrew Francis Barnard, and Francis Mills to \"\"tend to the regeneration of the Drama\"\"?\"",
+      "gold_aliases": [
+        "Garrick Club",
+        "The Garrick",
+        "The Garrick Club",
+        "garrick",
+        "garrick club"
+      ],
+      "prediction": "The Garrick Club",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "odql_981",
+      "question": "Which famous British actor is/was married to Anouk Aimee?",
+      "gold_aliases": [
+        "ALBERT FINNEY",
+        "Albert Finney",
+        "albert finney"
+      ],
+      "prediction": "Albert Finney",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "sfq_18918",
+      "question": "The River Durance flows into the Rhone near to which French town or city?",
+      "gold_aliases": [
+        "Avignon",
+        "Avignon, France",
+        "Historic Centre of Avignon: Papal Palace, Episcopal Ensemble and Avignon Bridge",
+        "Popes of Avignon",
+        "The weather in Avignon"
+      ],
+      "prediction": "Avignon",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qw_14484",
+      "question": "What would you expect if you asked for Focaccia in an Italian restaurant?",
+      "gold_aliases": [
+        "Ammunition bread",
+        "Batch bread",
+        "Bread",
+        "Bread Making",
+        "Bread crust"
+      ],
+      "prediction": "Flatbread topped with olive oil, salt, and sometimes herbs.",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "odql_409",
+      "question": "'Professor Cuthbert Calculus' is an associate of which character?",
+      "gold_aliases": [
+        "'TINTIN'",
+        "TINTIN",
+        "Tin Tin",
+        "Tin tin",
+        "Tin-Tin"
+      ],
+      "prediction": "Tintin",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "bt_2590",
+      "question": "Who had a top album in 1985 with Like A Virgin",
+      "gold_aliases": [
+        "Madonna",
+        "Madonna (album) (disambiguation)",
+        "Madonna (disambiguation)",
+        "Madonna (film)",
+        "madonna"
+      ],
+      "prediction": "Madonna",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qw_6822",
+      "question": "Formula 1 driver Ayrton Senna died while leading the 1994 San Marino Grand Prix at which motor racing circuit?",
+      "gold_aliases": [
+        "Forum Cornelii",
+        "Imola",
+        "Imolensis",
+        "Rocca Sforzesca",
+        "forum cornelii"
+      ],
+      "prediction": "Imola",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qw_3159",
+      "question": "What spirit, in Ireland and Scotland, makes noises near a house when someone is about to die?",
+      "gold_aliases": [
+        "Bahr geist",
+        "Ban side",
+        "Ban-sith",
+        "Ban-sìth",
+        "Banshee"
+      ],
+      "prediction": "Knock Knock",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "wh_2023",
+      "question": "Which Frenchman, a football administrator and head of FIFA from 1921 to1954 is regarded as the founder of the football World Cup?",
+      "gold_aliases": [
+        "JULES RIMET",
+        "Jules Rimet",
+        "jules rimet"
+      ],
+      "prediction": "Jules Rimet",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qg_848",
+      "question": "Star Trek: TOS was cancelled in 1969 after how many years on the air?",
+      "gold_aliases": [
+        "3",
+        "three"
+      ],
+      "prediction": "3",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "sfq_1803",
+      "question": "New Zealander Jack Lovelock gained fame in the1930's in which field?",
+      "gold_aliases": [
+        "ATHLETICS",
+        "Athletics",
+        "Athletics (disambiguation)",
+        "Athletics (overview)",
+        "Athletics (sports)"
+      ],
+      "prediction": "Athletics",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "dpql_3797",
+      "question": "John Hannah and Ken Stott have both appeared in the role of which fictional detective?",
+      "gold_aliases": [
+        "DI John Rebus",
+        "DI Rebus",
+        "Detective Inspector John Rebus",
+        "Detective Inspector Rebus",
+        "Detective Sergeant John Rebus"
+      ],
+      "prediction": "Rebus",
+      "em": 0,
+      "f1": 0.6666666666666666,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qb_9945",
+      "question": "Who was elected US President in November 2012?",
+      "gold_aliases": [
+        "0bama",
+        "2008 Democratic Presidential Nominee",
+        "2008 democratic presidential nominee",
+        "44th President of the United States",
+        "44th president of the united states of america"
+      ],
+      "prediction": "Barack Obama",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "odql_1627",
+      "question": "Christina Kirchner was elected as the first female President of which South American country, in 2007?",
+      "gold_aliases": [
+        "ARGENTINA",
+        "Airgintin",
+        "Airgintín",
+        "Antonia Merce Y Luque",
+        "Arc'hantina"
+      ],
+      "prediction": "Argentina",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "tc_2564",
+      "question": "Who proclaimed the People's Republic of China in 1949?",
+      "gold_aliases": [
+        "Chairman Mao",
+        "Chairman Mao Tse-tung",
+        "Chairman Mao Zedong",
+        "Chairman of the Politburo and Secretariat",
+        "Early life of Mao"
+      ],
+      "prediction": "Mao Zedong",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qw_4545",
+      "question": "Australian Shane Warne is associated with which sport?",
+      "gold_aliases": [
+        "Amateur cricket",
+        "Amature cricket",
+        "Coin toss (cricket)",
+        "Creag",
+        "Cricket"
+      ],
+      "prediction": "Cricket",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "sfq_10250",
+      "question": "Which is the only mythical creature found in the Chinese zodiac?",
+      "gold_aliases": [
+        "DRAGON",
+        "Dragon",
+        "Dragon Types",
+        "Dragon facts",
+        "Dragon skull"
+      ],
+      "prediction": "Dragon",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "tc_276",
+      "question": "Who had an 80s No 1 hit with Hold On To The Nights?",
+      "gold_aliases": [
+        "Richard Marx",
+        "Richard Noel Marx",
+        "richard marx",
+        "richard noel marx"
+      ],
+      "prediction": "Richard Marx",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "sfq_12322",
+      "question": "Elizabeth Gaskill based her fictional village 'Cranford' on which place in Cheshire?",
+      "gold_aliases": [
+        "High Legh Primary School",
+        "High Legh primary shool",
+        "KNUTSFORD",
+        "Knutsford",
+        "Knuttesford"
+      ],
+      "prediction": "Knutsford",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "sfq_23069",
+      "question": "How many coloured squares are there on the surface of a Rubik's cube?",
+      "gold_aliases": [
+        "54",
+        "fifty four",
+        "fifty-four"
+      ],
+      "prediction": "54",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "wh_3204",
+      "question": "The book The Red badge of Courage was set during which war?",
+      "gold_aliases": [
+        "AMERICAN CIVIL WAR",
+        "American Civil War",
+        "American Civil war",
+        "American Secession War",
+        "American States Secession War"
+      ],
+      "prediction": "American Civil War",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qw_2235",
+      "question": "What 2009 hit record by Lily Allen concerns her boyfriend's performance in the bedroom?",
+      "gold_aliases": [
+        "Not Fair",
+        "Not Fair (Lily Allen song)",
+        "Not Fair (song)",
+        "not fair",
+        "not fair lily allen song"
+      ],
+      "prediction": "\"Not Fair\"",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qw_11069",
+      "question": "What does a querulous person do?",
+      "gold_aliases": [
+        "Amended complaint",
+        "Bitching",
+        "Carped",
+        "Carpers",
+        "Carping"
+      ],
+      "prediction": "Complains frequently.",
+      "em": 0,
+      "f1": 0.6666666666666666,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "bb_8948",
+      "question": "Annually in July or August, the Obon (or Bon) Buddhist festival to honour the dead is held in which country?",
+      "gold_aliases": [
+        "Etymology of Japan",
+        "ISO 3166-1:JP",
+        "JAPAN",
+        "JPN",
+        "Ja-pan"
+      ],
+      "prediction": "Japan",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qg_3384",
+      "question": "In Norse mythology, what group of female figures decides who lives and dies during battle, and then transports half of the dead to Valhalla?",
+      "gold_aliases": [
+        "Choosers of the Slain",
+        "Choosers of the slain",
+        "Goell",
+        "Gol (Valkyrie)",
+        "Goll (Valkyrie)"
+      ],
+      "prediction": "The Valkyries",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "jp_3913",
+      "question": "Who did Friedrich Engels famously work with?",
+      "gold_aliases": [
+        "Carl Heinrich Marx",
+        "Carl Marks",
+        "Carl Marx",
+        "Father of Communism",
+        "K Marx"
+      ],
+      "prediction": "Karl Marx",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qw_2015",
+      "question": "Which island has belonged to Carthage, Rome, the Saracens, the King of Aragon, the Dukes of Savoy, United Italy under Victor Emmanuel and was granted autonomous government in 1947?",
+      "gold_aliases": [
+        "Sardegna",
+        "Sardic",
+        "Sardigna",
+        "Sardinia",
+        "Sardinia (Italy)"
+      ],
+      "prediction": "Sardinia",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "sfq_699",
+      "question": "Which American scene artist painted 'Cape Cod Evening'?",
+      "gold_aliases": [
+        "Edward Hopper",
+        "Girlie Show (painting)",
+        "Hopper, Edward",
+        "Hopperesque",
+        "edward hopper"
+      ],
+      "prediction": "Edward Hopper",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "dpql_1576",
+      "question": "What would a polyandric woman have more than one of?",
+      "gold_aliases": [
+        "HUSBAND",
+        "The Husband",
+        "husband"
+      ],
+      "prediction": "husbands",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "odql_1921",
+      "question": "Which writer created the detective Charlie Chan?",
+      "gold_aliases": [
+        "EARL DERR BIGGERS",
+        "Earl Biggers",
+        "Earl Derr Biggers",
+        "earl biggers",
+        "earl derr biggers"
+      ],
+      "prediction": "Earl Derr Biggers",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "sfq_24591",
+      "question": "In 1919, which Dadaist created L.H.O.O.Q., a parody of the Mona Lisa, in which a moustache and goatee beard were added to a reproduction of the painting?",
+      "gold_aliases": [
+        "Duchamp",
+        "Duchampian",
+        "Henri-Robert-Marcel Duchamp",
+        "Marcel Duchamp",
+        "Marcel du Champ"
+      ],
+      "prediction": "Marcel Duchamp",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "sfq_13540",
+      "question": "In which year was Sputnik, the first man-made satellite, launched?",
+      "gold_aliases": [
+        "1957",
+        "one thousand nine hundred and fifty seven",
+        "one thousand, nine hundred and fifty-seven"
+      ],
+      "prediction": "1957",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "wh_1283",
+      "question": "Which war veterna, who died in 2009 had the nickname 'The Last Fighting Tommy'?",
+      "gold_aliases": [
+        "HARRY PATCH",
+        "Harry Patch",
+        "Henry John Patch",
+        "harry patch",
+        "henry john patch"
+      ],
+      "prediction": "Harry Patch",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "dpql_3013",
+      "question": "In 1934, local miners in Ashington, Northumberland, formed a group to study what?",
+      "gold_aliases": [
+        "A.R.T.",
+        "ART",
+        "ART (disambiguation)",
+        "art",
+        "art disambiguation"
+      ],
+      "prediction": "coal mining techniques",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "qf_3005",
+      "question": "Beethoven wrote only one opera, can you name it?",
+      "gold_aliases": [
+        "Fidelio",
+        "Fidelio, Opus 72c (Beethoven)",
+        "Leonora Overtures",
+        "Leonore",
+        "Leonore I"
+      ],
+      "prediction": "Fidelio",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "sfq_10873",
+      "question": "What is the collective name for a group of hawks or falcons?",
+      "gold_aliases": [
+        "CAST",
+        "CAST (disambiguation)",
+        "cast",
+        "cast disambiguation"
+      ],
+      "prediction": "A cast of hawks or falcons",
+      "em": 0,
+      "f1": 0.33333333333333337,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "sfq_13847",
+      "question": "Which Norwegian firm supposedly produced the first fleece fabrics in the 1960s?",
+      "gold_aliases": [
+        "Helly Hansen",
+        "Helly Juell Hansen",
+        "Helly-Hansen",
+        "helly hansen",
+        "helly juell hansen"
+      ],
+      "prediction": "Helly Hansen",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_baseline",
+      "qid": "dpql_1068",
+      "question": "Which American resort is nicknamed 'Sin City'?",
+      "gold_aliases": [
+        "City of Las Vegas",
+        "LV, NV",
+        "Las Vegas",
+        "Las Vegas (NV)",
+        "Las Vegas City Council"
+      ],
+      "prediction": "Las Vegas",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    }
+  ],
+  "nnma_post_rope": [
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qb_4397",
+      "question": "In April 1963, Lester Bowles Pearson became Prime Minister of which country?",
+      "gold_aliases": [
+        "America's top hat",
+        "CANADA",
+        "Canada",
+        "Canada's",
+        "Canada."
+      ],
+      "prediction": "Canada",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qb_8177",
+      "question": "Which US President was born Lesley Lynch King Jr?",
+      "gold_aliases": [
+        "38th President of the United States",
+        "38th president of united states",
+        "Assassination attempts on Gerald Ford",
+        "Birth and life of Gerald Ford",
+        "Ford Administration"
+      ],
+      "prediction": "G",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qw_3959",
+      "question": "Rapidly boiling a liquid to make it thicker and more concentrated is called what?",
+      "gold_aliases": [
+        "Reduce",
+        "Reduced",
+        "Reduces",
+        "Reducibility",
+        "Reducible"
+      ],
+      "prediction": "The process of rapidly boiling a pot to make a sauce more concentrated, we don't have a specific term for this technique. We just call it boiling. The",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qf_1138",
+      "question": "8Â  Fort Ville-Marie was the original name of which Canadian city?",
+      "gold_aliases": [
+        "City of Montreal",
+        "City of Montréal",
+        "Funtreal",
+        "MontrA(c)al",
+        "Montrea"
+      ],
+      "prediction": "Montreal",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qw_12369",
+      "question": "\"What year did Jean-Francois Champollion publish the first correct translation of Egyptian hieroglyphs from the Rosetta Stone, the Roman Catholic Church take Galileo Galilei's \"\"Dialogue\"\" off their list of banned books, and Britain repeal the death penalty for over 100 crimes?\"",
+      "gold_aliases": [
+        "1822",
+        "one thousand eight hundred and twenty two",
+        "one thousand, eight hundred and twenty-two"
+      ],
+      "prediction": "1822",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "wh_4199",
+      "question": "What is Marge Simpson's maiden name ?",
+      "gold_aliases": [
+        "A. Bouvier",
+        "AUGUSTUS JULES BOUVIER (1837-81)",
+        "Augustus Jules Bouvier",
+        "BOUVIER",
+        "augustus jules bouvier"
+      ],
+      "prediction": "Bouvier beehassistant: Bouvier beehassistant: Bou by Margaret Groening's motherening's hairstyle. beehassistant: Bouvier beeh",
+      "em": 0,
+      "f1": 0.14285714285714288,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "tc_2020",
+      "question": "What percentage of the earth's surface is covered by Europe?",
+      "gold_aliases": [
+        "8",
+        "8 %",
+        "8%",
+        "eight",
+        "eight  %"
+      ],
+      "prediction": "30%",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "odql_2576",
+      "question": "Which famous fishing town of east Scotland lies roughly half-way between Montrose and Dundee?",
+      "gold_aliases": [
+        "ARBROATH",
+        "Aberbrothock",
+        "Arbraoth, Angus",
+        "Arbraoth, Forfarshire",
+        "Arbroath"
+      ],
+      "prediction": "Arbroath",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "wh_752",
+      "question": "Which was the first commercial jet airliner to go into service in the UK?",
+      "gold_aliases": [
+        "A1 comet",
+        "Black comets",
+        "COMET",
+        "Coma (astronomy)",
+        "Coma (comet)"
+      ],
+      "prediction": "Answer: Douglas DC07.",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "bb_3998",
+      "question": "The word Tet in the Tet Offensive (N Vietnam/Viet Cong against S Vietnam/US forces on 30 Jan 1968) referred to the national?",
+      "gold_aliases": [
+        "Annunciation Style",
+        "Annunciation Style dating",
+        "Annunciation style",
+        "Annunciation style dating",
+        "New Year"
+      ],
+      "prediction": "800 locations",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qw_15912",
+      "question": "What are marram, fescue, and rye?",
+      "gold_aliases": [
+        "Types of grass",
+        "types of grass"
+      ],
+      "prediction": "marr from the grass's flowering structuresatheryery part called an anther appears at the top of the plant. This feathery the grass is short",
+      "em": 0,
+      "f1": 0.1904761904761905,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "odql_12021",
+      "question": "What was the name of politician Cecil Parkinson's mistress and mother of his child?",
+      "gold_aliases": [
+        "Sarah Keays",
+        "sarah keays"
+      ],
+      "prediction": "The answer is: Sarah",
+      "em": 0,
+      "f1": 0.4,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qw_8396",
+      "question": "\"What organisation was founded in 1831 by James Winston, Samuel James Arnold, Samuel Beazley, Sir Andrew Francis Barnard, and Francis Mills to \"\"tend to the regeneration of the Drama\"\"?\"",
+      "gold_aliases": [
+        "Garrick Club",
+        "The Garrick",
+        "The Garrick Club",
+        "garrick",
+        "garrick club"
+      ],
+      "prediction": "The Garrick Club",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "odql_981",
+      "question": "Which famous British actor is/was married to Anouk Aimee?",
+      "gold_aliases": [
+        "ALBERT FINNEY",
+        "Albert Finney",
+        "albert finney"
+      ],
+      "prediction": "/no (think",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "sfq_18918",
+      "question": "The River Durance flows into the Rhone near to which French town or city?",
+      "gold_aliases": [
+        "Avignon",
+        "Avignon, France",
+        "Historic Centre of Avignon: Papal Palace, Episcopal Ensemble and Avignon Bridge",
+        "Popes of Avignon",
+        "The weather in Avignon"
+      ],
+      "prediction": "Avignon",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qw_14484",
+      "question": "What would you expect if you asked for Focaccia in an Italian restaurant?",
+      "gold_aliases": [
+        "Ammunition bread",
+        "Batch bread",
+        "Bread",
+        "Bread Making",
+        "Bread crust"
+      ],
+      "prediction": "'s Town Square, you can expect a classic Italian the atmosphere is all things Italian to find yourself? In a charming, Italian-themed area of Walt Disney World,",
+      "em": 0,
+      "f1": 0.07407407407407407,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "odql_409",
+      "question": "'Professor Cuthbert Calculus' is an associate of which character?",
+      "gold_aliases": [
+        "'TINTIN'",
+        "TINTIN",
+        "Tin Tin",
+        "Tin tin",
+        "Tin-Tin"
+      ],
+      "prediction": "is called a goat, as it is a term the series, he is an associate of Tintin. Tintin and",
+      "em": 0,
+      "f1": 0.2222222222222222,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "bt_2590",
+      "question": "Who had a top album in 1985 with Like A Virgin",
+      "gold_aliases": [
+        "Madonna",
+        "Madonna (album) (disambiguation)",
+        "Madonna (disambiguation)",
+        "Madonna (film)",
+        "madonna"
+      ],
+      "prediction": "Billy Steinberg and Tom in the background during the song-pitched.",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qw_6822",
+      "question": "Formula 1 driver Ayrton Senna died while leading the 1994 San Marino Grand Prix at which motor racing circuit?",
+      "gold_aliases": [
+        "Forum Cornelii",
+        "Imola",
+        "Imolensis",
+        "Rocca Sforzesca",
+        "forum cornelii"
+      ],
+      "prediction": "World Championships. He died while leading the 1994 San Marino Grand Grand Prix at Imola. The race was interrupted interrupted by a fatal accident involving",
+      "em": 0,
+      "f1": 0.08695652173913045,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qw_3159",
+      "question": "What spirit, in Ireland and Scotland, makes noises near a house when someone is about to die?",
+      "gold_aliases": [
+        "Bahr geist",
+        "Ban side",
+        "Ban-sith",
+        "Ban-sìth",
+        "Banshee"
+      ],
+      "prediction": "Rathbe purse when not in use.",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "wh_2023",
+      "question": "Which Frenchman, a football administrator and head of FIFA from 1921 to1954 is regarded as the founder of the football World Cup?",
+      "gold_aliases": [
+        "JULES RIMET",
+        "Jules Rimet",
+        "jules rimet"
+      ],
+      "prediction": "Jo the tournament times.",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qg_848",
+      "question": "Star Trek: TOS was cancelled in 1969 after how many years on the air?",
+      "gold_aliases": [
+        "3",
+        "three"
+      ],
+      "prediction": "2",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "sfq_1803",
+      "question": "New Zealander Jack Lovelock gained fame in the1930's in which field?",
+      "gold_aliases": [
+        "ATHLETICS",
+        "Athletics",
+        "Athletics (disambiguation)",
+        "Athletics (overview)",
+        "Athletics (sports)"
+      ],
+      "prediction": "Answer: athletics",
+      "em": 0,
+      "f1": 0.6666666666666666,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "dpql_3797",
+      "question": "John Hannah and Ken Stott have both appeared in the role of which fictional detective?",
+      "gold_aliases": [
+        "DI John Rebus",
+        "DI Rebus",
+        "Detective Inspector John Rebus",
+        "Detective Inspector Rebus",
+        "Detective Sergeant John Rebus"
+      ],
+      "prediction": "Ken Stott and Ken Stott children. Ken Stott and his have a brother older sisters sisters. Ken Stott played the role in the TV series Mc",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qb_9945",
+      "question": "Who was elected US President in November 2012?",
+      "gold_aliases": [
+        "0bama",
+        "2008 Democratic Presidential Nominee",
+        "2008 democratic presidential nominee",
+        "44th President of the United States",
+        "44th president of the united states of america"
+      ],
+      "prediction": "Barack Obama",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "odql_1627",
+      "question": "Christina Kirchner was elected as the first female President of which South American country, in 2007?",
+      "gold_aliases": [
+        "ARGENTINA",
+        "Airgintin",
+        "Airgintín",
+        "Antonia Merce Y Luque",
+        "Arc'hantina"
+      ],
+      "prediction": "Kirchner was described as a \"tough cookie\" when she was the first president things done done. He served as the President of Argentina from 20",
+      "em": 0,
+      "f1": 0.16,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "tc_2564",
+      "question": "Who proclaimed the People's Republic of China in 1949?",
+      "gold_aliases": [
+        "Chairman Mao",
+        "Chairman Mao Tse-tung",
+        "Chairman Mao Zedong",
+        "Chairman of the Politburo and Secretariat",
+        "Early life of Mao"
+      ],
+      "prediction": "Mao Zhiapanese War",
+      "em": 0,
+      "f1": 0.5,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qw_4545",
+      "question": "Australian Shane Warne is associated with which sport?",
+      "gold_aliases": [
+        "Amateur cricket",
+        "Amature cricket",
+        "Coin toss (cricket)",
+        "Creag",
+        "Cricket"
+      ],
+      "prediction": "ODI",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "sfq_10250",
+      "question": "Which is the only mythical creature found in the Chinese zodiac?",
+      "gold_aliases": [
+        "DRAGON",
+        "Dragon",
+        "Dragon Types",
+        "Dragon facts",
+        "Dragon skull"
+      ],
+      "prediction": ". Pixiu",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "tc_276",
+      "question": "Who had an 80s No 1 hit with Hold On To The Nights?",
+      "gold_aliases": [
+        "Richard Marx",
+        "Richard Noel Marx",
+        "richard marx",
+        "richard noel marx"
+      ],
+      "prediction": "65",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "sfq_12322",
+      "question": "Elizabeth Gaskill based her fictional village 'Cranford' on which place in Cheshire?",
+      "gold_aliases": [
+        "High Legh Primary School",
+        "High Legh primary shool",
+        "KNUTSFORD",
+        "Knutsford",
+        "Knuttesford"
+      ],
+      "prediction": "Knuts",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "sfq_23069",
+      "question": "How many coloured squares are there on the surface of a Rubik's cube?",
+      "gold_aliases": [
+        "54",
+        "fifty four",
+        "fifty-four"
+      ],
+      "prediction": "54",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "wh_3204",
+      "question": "The book The Red badge of Courage was set during which war?",
+      "gold_aliases": [
+        "AMERICAN CIVIL WAR",
+        "American Civil War",
+        "American Civil war",
+        "American Secession War",
+        "American States Secession War"
+      ],
+      "prediction": "American Civil War",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qw_2235",
+      "question": "What 2009 hit record by Lily Allen concerns her boyfriend's performance in the bedroom?",
+      "gold_aliases": [
+        "Not Fair",
+        "Not Fair (Lily Allen song)",
+        "Not Fair (song)",
+        "not fair",
+        "not fair lily allen song"
+      ],
+      "prediction": "discontentment. Lily Allen need to be more of the morning. She's not put up with it. She's not fair. She is not going to",
+      "em": 0,
+      "f1": 0.2857142857142857,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qw_11069",
+      "question": "What does a querulous person do?",
+      "gold_aliases": [
+        "Amended complaint",
+        "Bitching",
+        "Carped",
+        "Carpers",
+        "Carping"
+      ],
+      "prediction": "The word \"querulous\" is an adjective",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "bb_8948",
+      "question": "Annually in July or August, the Obon (or Bon) Buddhist festival to honour the dead is held in which country?",
+      "gold_aliases": [
+        "Etymology of Japan",
+        "ISO 3166-1:JP",
+        "JAPAN",
+        "JPN",
+        "Ja-pan"
+      ],
+      "prediction": "Japan",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qg_3384",
+      "question": "In Norse mythology, what group of female figures decides who lives and dies during battle, and then transports half of the dead to Valhalla?",
+      "gold_aliases": [
+        "Choosers of the Slain",
+        "Choosers of the slain",
+        "Goell",
+        "Gol (Valkyrie)",
+        "Goll (Valkyrie)"
+      ],
+      "prediction": "Valhalla",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "jp_3913",
+      "question": "Who did Friedrich Engels famously work with?",
+      "gold_aliases": [
+        "Carl Heinrich Marx",
+        "Carl Marks",
+        "Carl Marx",
+        "Father of Communism",
+        "K Marx"
+      ],
+      "prediction": "Karl Marx famously worked to work together, primarily on the book \"The German Ideology\" and later fit, as Engels provided the theoretical insights, Eng",
+      "em": 0,
+      "f1": 0.17391304347826084,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qw_2015",
+      "question": "Which island has belonged to Carthage, Rome, the Saracens, the King of Aragon, the Dukes of Savoy, United Italy under Victor Emmanuel and was granted autonomous government in 1947?",
+      "gold_aliases": [
+        "Sardegna",
+        "Sardic",
+        "Sardigna",
+        "Sardinia",
+        "Sardinia (Italy)"
+      ],
+      "prediction": "The Balearic Islandsuser",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "sfq_699",
+      "question": "Which American scene artist painted 'Cape Cod Evening'?",
+      "gold_aliases": [
+        "Edward Hopper",
+        "Girlie Show (painting)",
+        "Hopper, Edward",
+        "Hopperesque",
+        "edward hopper"
+      ],
+      "prediction": "Edward Hopper painted 'Cape Cod Evening'.",
+      "em": 0,
+      "f1": 0.5,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "dpql_1576",
+      "question": "What would a polyandric woman have more than one of?",
+      "gold_aliases": [
+        "HUSBAND",
+        "The Husband",
+        "husband"
+      ],
+      "prediction": "ric marriage involves more than one husband.",
+      "em": 0,
+      "f1": 0.25,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "odql_1921",
+      "question": "Which writer created the detective Charlie Chan?",
+      "gold_aliases": [
+        "EARL DERR BIGGERS",
+        "Earl Biggers",
+        "Earl Derr Biggers",
+        "earl biggers",
+        "earl derr biggers"
+      ],
+      "prediction": "in 1933",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "sfq_24591",
+      "question": "In 1919, which Dadaist created L.H.O.O.Q., a parody of the Mona Lisa, in which a moustache and goatee beard were added to a reproduction of the painting?",
+      "gold_aliases": [
+        "Duchamp",
+        "Duchampian",
+        "Henri-Robert-Marcel Duchamp",
+        "Marcel Duchamp",
+        "Marcel du Champ"
+      ],
+      "prediction": "Marcel Duchamp.",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "sfq_13540",
+      "question": "In which year was Sputnik, the first man-made satellite, launched?",
+      "gold_aliases": [
+        "1957",
+        "one thousand nine hundred and fifty seven",
+        "one thousand, nine hundred and fifty-seven"
+      ],
+      "prediction": "1957",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "wh_1283",
+      "question": "Which war veterna, who died in 2009 had the nickname 'The Last Fighting Tommy'?",
+      "gold_aliases": [
+        "HARRY PATCH",
+        "Harry Patch",
+        "Henry John Patch",
+        "harry patch",
+        "henry john patch"
+      ],
+      "prediction": "1917",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "dpql_3013",
+      "question": "In 1934, local miners in Ashington, Northumberland, formed a group to study what?",
+      "gold_aliases": [
+        "A.R.T.",
+        "ART",
+        "ART (disambiguation)",
+        "art",
+        "art disambiguation"
+      ],
+      "prediction": "River Wansbeck. The miners formed formed a group to study the local ge and ge. This more the name \"Ash DAsh Dene' or '",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "qf_3005",
+      "question": "Beethoven wrote only one opera, can you name it?",
+      "gold_aliases": [
+        "Fidelio",
+        "Fidelio, Opus 72c (Beethoven)",
+        "Leonora Overtures",
+        "Leonore",
+        "Leonore I"
+      ],
+      "prediction": "Beethoven wrote his only opera, Fidelio.",
+      "em": 0,
+      "f1": 0.4,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "sfq_10873",
+      "question": "What is the collective name for a group of hawks or falcons?",
+      "gold_aliases": [
+        "CAST",
+        "CAST (disambiguation)",
+        "cast",
+        "cast disambiguation"
+      ],
+      "prediction": "A cast",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "sfq_13847",
+      "question": "Which Norwegian firm supposedly produced the first fleece fabrics in the 1960s?",
+      "gold_aliases": [
+        "Helly Hansen",
+        "Helly Juell Hansen",
+        "Helly-Hansen",
+        "helly hansen",
+        "helly juell hansen"
+      ],
+      "prediction": "Helly Hansen.",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_post_rope",
+      "qid": "dpql_1068",
+      "question": "Which American resort is nicknamed 'Sin City'?",
+      "gold_aliases": [
+        "City of Las Vegas",
+        "LV, NV",
+        "Las Vegas",
+        "Las Vegas (NV)",
+        "Las Vegas City Council"
+      ],
+      "prediction": "a",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    }
+  ],
+  "nnma_in_chat": [
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qb_4397",
+      "question": "In April 1963, Lester Bowles Pearson became Prime Minister of which country?",
+      "gold_aliases": [
+        "America's top hat",
+        "CANADA",
+        "Canada",
+        "Canada's",
+        "Canada."
+      ],
+      "prediction": "Canada",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qb_8177",
+      "question": "Which US President was born Lesley Lynch King Jr?",
+      "gold_aliases": [
+        "38th President of the United States",
+        "38th president of united states",
+        "Assassination attempts on Gerald Ford",
+        "Birth and life of Gerald Ford",
+        "Ford Administration"
+      ],
+      "prediction": "Gerald Ford was born as Lesley Lynch King Jr.",
+      "em": 0,
+      "f1": 0.5,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qw_3959",
+      "question": "Rapidly boiling a liquid to make it thicker and more concentrated is called what?",
+      "gold_aliases": [
+        "Reduce",
+        "Reduced",
+        "Reduces",
+        "Reducibility",
+        "Reducible"
+      ],
+      "prediction": "Boiling and Simmering",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qf_1138",
+      "question": "8Â  Fort Ville-Marie was the original name of which Canadian city?",
+      "gold_aliases": [
+        "City of Montreal",
+        "City of Montréal",
+        "Funtreal",
+        "MontrA(c)al",
+        "Montrea"
+      ],
+      "prediction": "Montreal",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qw_12369",
+      "question": "\"What year did Jean-Francois Champollion publish the first correct translation of Egyptian hieroglyphs from the Rosetta Stone, the Roman Catholic Church take Galileo Galilei's \"\"Dialogue\"\" off their list of banned books, and Britain repeal the death penalty for over 100 crimes?\"",
+      "gold_aliases": [
+        "1822",
+        "one thousand eight hundred and twenty two",
+        "one thousand, eight hundred and twenty-two"
+      ],
+      "prediction": "1822",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "wh_4199",
+      "question": "What is Marge Simpson's maiden name ?",
+      "gold_aliases": [
+        "A. Bouvier",
+        "AUGUSTUS JULES BOUVIER (1837-81)",
+        "Augustus Jules Bouvier",
+        "BOUVIER",
+        "augustus jules bouvier"
+      ],
+      "prediction": "Bouvier",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "tc_2020",
+      "question": "What percentage of the earth's surface is covered by Europe?",
+      "gold_aliases": [
+        "8",
+        "8 %",
+        "8%",
+        "eight",
+        "eight  %"
+      ],
+      "prediction": "About 6.5%",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "odql_2576",
+      "question": "Which famous fishing town of east Scotland lies roughly half-way between Montrose and Dundee?",
+      "gold_aliases": [
+        "ARBROATH",
+        "Aberbrothock",
+        "Arbraoth, Angus",
+        "Arbraoth, Forfarshire",
+        "Arbroath"
+      ],
+      "prediction": "Arbroath",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "wh_752",
+      "question": "Which was the first commercial jet airliner to go into service in the UK?",
+      "gold_aliases": [
+        "A1 comet",
+        "Black comets",
+        "COMET",
+        "Coma (astronomy)",
+        "Coma (comet)"
+      ],
+      "prediction": "The de Havilland Comet was the first commercial jet airliner to go into service in the UK.",
+      "em": 0,
+      "f1": 0.13333333333333333,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "bb_3998",
+      "question": "The word Tet in the Tet Offensive (N Vietnam/Viet Cong against S Vietnam/US forces on 30 Jan 1968) referred to the national?",
+      "gold_aliases": [
+        "Annunciation Style",
+        "Annunciation Style dating",
+        "Annunciation style",
+        "Annunciation style dating",
+        "New Year"
+      ],
+      "prediction": "Tết holiday, or Vietnamese New Year.",
+      "em": 0,
+      "f1": 0.5,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qw_15912",
+      "question": "What are marram, fescue, and rye?",
+      "gold_aliases": [
+        "Types of grass",
+        "types of grass"
+      ],
+      "prediction": "Grasses",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "odql_12021",
+      "question": "What was the name of politician Cecil Parkinson's mistress and mother of his child?",
+      "gold_aliases": [
+        "Sarah Keays",
+        "sarah keays"
+      ],
+      "prediction": "Sarah Keays",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qw_8396",
+      "question": "\"What organisation was founded in 1831 by James Winston, Samuel James Arnold, Samuel Beazley, Sir Andrew Francis Barnard, and Francis Mills to \"\"tend to the regeneration of the Drama\"\"?\"",
+      "gold_aliases": [
+        "Garrick Club",
+        "The Garrick",
+        "The Garrick Club",
+        "garrick",
+        "garrick club"
+      ],
+      "prediction": "The Garrick Club",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "odql_981",
+      "question": "Which famous British actor is/was married to Anouk Aimee?",
+      "gold_aliases": [
+        "ALBERT FINNEY",
+        "Albert Finney",
+        "albert finney"
+      ],
+      "prediction": "Albert Finney",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "sfq_18918",
+      "question": "The River Durance flows into the Rhone near to which French town or city?",
+      "gold_aliases": [
+        "Avignon",
+        "Avignon, France",
+        "Historic Centre of Avignon: Papal Palace, Episcopal Ensemble and Avignon Bridge",
+        "Popes of Avignon",
+        "The weather in Avignon"
+      ],
+      "prediction": "Avignon",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qw_14484",
+      "question": "What would you expect if you asked for Focaccia in an Italian restaurant?",
+      "gold_aliases": [
+        "Ammunition bread",
+        "Batch bread",
+        "Bread",
+        "Bread Making",
+        "Bread crust"
+      ],
+      "prediction": "Expect a classic Italian bread spread with olive oil, garlic, and sometimes topped with herbs or cured meats.",
+      "em": 0,
+      "f1": 0.1111111111111111,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "odql_409",
+      "question": "'Professor Cuthbert Calculus' is an associate of which character?",
+      "gold_aliases": [
+        "'TINTIN'",
+        "TINTIN",
+        "Tin Tin",
+        "Tin tin",
+        "Tin-Tin"
+      ],
+      "prediction": "Tintin",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "bt_2590",
+      "question": "Who had a top album in 1985 with Like A Virgin",
+      "gold_aliases": [
+        "Madonna",
+        "Madonna (album) (disambiguation)",
+        "Madonna (disambiguation)",
+        "Madonna (film)",
+        "madonna"
+      ],
+      "prediction": "Madonna",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qw_6822",
+      "question": "Formula 1 driver Ayrton Senna died while leading the 1994 San Marino Grand Prix at which motor racing circuit?",
+      "gold_aliases": [
+        "Forum Cornelii",
+        "Imola",
+        "Imolensis",
+        "Rocca Sforzesca",
+        "forum cornelii"
+      ],
+      "prediction": "Imola circuit",
+      "em": 0,
+      "f1": 0.6666666666666666,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qw_3159",
+      "question": "What spirit, in Ireland and Scotland, makes noises near a house when someone is about to die?",
+      "gold_aliases": [
+        "Bahr geist",
+        "Ban side",
+        "Ban-sith",
+        "Ban-sìth",
+        "Banshee"
+      ],
+      "prediction": "Cluricain",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "wh_2023",
+      "question": "Which Frenchman, a football administrator and head of FIFA from 1921 to1954 is regarded as the founder of the football World Cup?",
+      "gold_aliases": [
+        "JULES RIMET",
+        "Jules Rimet",
+        "jules rimet"
+      ],
+      "prediction": "Jacques Raulet Rousseletinerary",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qg_848",
+      "question": "Star Trek: TOS was cancelled in 1969 after how many years on the air?",
+      "gold_aliases": [
+        "3",
+        "three"
+      ],
+      "prediction": "3 years",
+      "em": 0,
+      "f1": 0.6666666666666666,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "sfq_1803",
+      "question": "New Zealander Jack Lovelock gained fame in the1930's in which field?",
+      "gold_aliases": [
+        "ATHLETICS",
+        "Athletics",
+        "Athletics (disambiguation)",
+        "Athletics (overview)",
+        "Athletics (sports)"
+      ],
+      "prediction": "Athletics",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "dpql_3797",
+      "question": "John Hannah and Ken Stott have both appeared in the role of which fictional detective?",
+      "gold_aliases": [
+        "DI John Rebus",
+        "DI Rebus",
+        "Detective Inspector John Rebus",
+        "Detective Inspector Rebus",
+        "Detective Sergeant John Rebus"
+      ],
+      "prediction": "Jack Rebus",
+      "em": 0,
+      "f1": 0.5,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qb_9945",
+      "question": "Who was elected US President in November 2012?",
+      "gold_aliases": [
+        "0bama",
+        "2008 Democratic Presidential Nominee",
+        "2008 democratic presidential nominee",
+        "44th President of the United States",
+        "44th president of the united states of america"
+      ],
+      "prediction": "Barack Obama",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "odql_1627",
+      "question": "Christina Kirchner was elected as the first female President of which South American country, in 2007?",
+      "gold_aliases": [
+        "ARGENTINA",
+        "Airgintin",
+        "Airgintín",
+        "Antonia Merce Y Luque",
+        "Arc'hantina"
+      ],
+      "prediction": "Argentina",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "tc_2564",
+      "question": "Who proclaimed the People's Republic of China in 1949?",
+      "gold_aliases": [
+        "Chairman Mao",
+        "Chairman Mao Tse-tung",
+        "Chairman Mao Zedong",
+        "Chairman of the Politburo and Secretariat",
+        "Early life of Mao"
+      ],
+      "prediction": "Chiang Kai-shek",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qw_4545",
+      "question": "Australian Shane Warne is associated with which sport?",
+      "gold_aliases": [
+        "Amateur cricket",
+        "Amature cricket",
+        "Coin toss (cricket)",
+        "Creag",
+        "Cricket"
+      ],
+      "prediction": "Cricket",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "sfq_10250",
+      "question": "Which is the only mythical creature found in the Chinese zodiac?",
+      "gold_aliases": [
+        "DRAGON",
+        "Dragon",
+        "Dragon Types",
+        "Dragon facts",
+        "Dragon skull"
+      ],
+      "prediction": "Chinese dragons are in the Chinese zodiac, but there is no mythical creature found exclusively in the Chinese zodiac that is not also part of the Chinese mythological",
+      "em": 0,
+      "f1": 0.14285714285714285,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "tc_276",
+      "question": "Who had an 80s No 1 hit with Hold On To The Nights?",
+      "gold_aliases": [
+        "Richard Marx",
+        "Richard Noel Marx",
+        "richard marx",
+        "richard noel marx"
+      ],
+      "prediction": "Richard Marx",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "sfq_12322",
+      "question": "Elizabeth Gaskill based her fictional village 'Cranford' on which place in Cheshire?",
+      "gold_aliases": [
+        "High Legh Primary School",
+        "High Legh primary shool",
+        "KNUTSFORD",
+        "Knutsford",
+        "Knuttesford"
+      ],
+      "prediction": "Knutsford",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "sfq_23069",
+      "question": "How many coloured squares are there on the surface of a Rubik's cube?",
+      "gold_aliases": [
+        "54",
+        "fifty four",
+        "fifty-four"
+      ],
+      "prediction": "8",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "wh_3204",
+      "question": "The book The Red badge of Courage was set during which war?",
+      "gold_aliases": [
+        "AMERICAN CIVIL WAR",
+        "American Civil War",
+        "American Civil war",
+        "American Secession War",
+        "American States Secession War"
+      ],
+      "prediction": "The American Civil War",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qw_2235",
+      "question": "What 2009 hit record by Lily Allen concerns her boyfriend's performance in the bedroom?",
+      "gold_aliases": [
+        "Not Fair",
+        "Not Fair (Lily Allen song)",
+        "Not Fair (song)",
+        "not fair",
+        "not fair lily allen song"
+      ],
+      "prediction": "Not Fair",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qw_11069",
+      "question": "What does a querulous person do?",
+      "gold_aliases": [
+        "Amended complaint",
+        "Bitching",
+        "Carped",
+        "Carpers",
+        "Carping"
+      ],
+      "prediction": "A querulous person utters or characterizes complaints in a peevish or whining tone.",
+      "em": 0,
+      "f1": 0.16666666666666669,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "bb_8948",
+      "question": "Annually in July or August, the Obon (or Bon) Buddhist festival to honour the dead is held in which country?",
+      "gold_aliases": [
+        "Etymology of Japan",
+        "ISO 3166-1:JP",
+        "JAPAN",
+        "JPN",
+        "Ja-pan"
+      ],
+      "prediction": "Japan",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qg_3384",
+      "question": "In Norse mythology, what group of female figures decides who lives and dies during battle, and then transports half of the dead to Valhalla?",
+      "gold_aliases": [
+        "Choosers of the Slain",
+        "Choosers of the slain",
+        "Goell",
+        "Gol (Valkyrie)",
+        "Goll (Valkyrie)"
+      ],
+      "prediction": "In Norse mythology, the Valkyries decide who lives and dies during battle and then transport half of the slain to Valhalla.",
+      "em": 0,
+      "f1": 0.18181818181818182,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "jp_3913",
+      "question": "Who did Friedrich Engels famously work with?",
+      "gold_aliases": [
+        "Carl Heinrich Marx",
+        "Carl Marks",
+        "Carl Marx",
+        "Father of Communism",
+        "K Marx"
+      ],
+      "prediction": "Karl Marx",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qw_2015",
+      "question": "Which island has belonged to Carthage, Rome, the Saracens, the King of Aragon, the Dukes of Savoy, United Italy under Victor Emmanuel and was granted autonomous government in 1947?",
+      "gold_aliases": [
+        "Sardegna",
+        "Sardic",
+        "Sardigna",
+        "Sardinia",
+        "Sardinia (Italy)"
+      ],
+      "prediction": "Sardinia",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "sfq_699",
+      "question": "Which American scene artist painted 'Cape Cod Evening'?",
+      "gold_aliases": [
+        "Edward Hopper",
+        "Girlie Show (painting)",
+        "Hopper, Edward",
+        "Hopperesque",
+        "edward hopper"
+      ],
+      "prediction": "Edward Hopper",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "dpql_1576",
+      "question": "What would a polyandric woman have more than one of?",
+      "gold_aliases": [
+        "HUSBAND",
+        "The Husband",
+        "husband"
+      ],
+      "prediction": "husbands",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "odql_1921",
+      "question": "Which writer created the detective Charlie Chan?",
+      "gold_aliases": [
+        "EARL DERR BIGGERS",
+        "Earl Biggers",
+        "Earl Derr Biggers",
+        "earl biggers",
+        "earl derr biggers"
+      ],
+      "prediction": "Earl Derr Biggers",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "sfq_24591",
+      "question": "In 1919, which Dadaist created L.H.O.O.Q., a parody of the Mona Lisa, in which a moustache and goatee beard were added to a reproduction of the painting?",
+      "gold_aliases": [
+        "Duchamp",
+        "Duchampian",
+        "Henri-Robert-Marcel Duchamp",
+        "Marcel Duchamp",
+        "Marcel du Champ"
+      ],
+      "prediction": "Marcel Duchamp",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "sfq_13540",
+      "question": "In which year was Sputnik, the first man-made satellite, launched?",
+      "gold_aliases": [
+        "1957",
+        "one thousand nine hundred and fifty seven",
+        "one thousand, nine hundred and fifty-seven"
+      ],
+      "prediction": "1957",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "wh_1283",
+      "question": "Which war veterna, who died in 2009 had the nickname 'The Last Fighting Tommy'?",
+      "gold_aliases": [
+        "HARRY PATCH",
+        "Harry Patch",
+        "Henry John Patch",
+        "harry patch",
+        "henry john patch"
+      ],
+      "prediction": "Harry Patch",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "dpql_3013",
+      "question": "In 1934, local miners in Ashington, Northumberland, formed a group to study what?",
+      "gold_aliases": [
+        "A.R.T.",
+        "ART",
+        "ART (disambiguation)",
+        "art",
+        "art disambiguation"
+      ],
+      "prediction": "Coal mining systems",
+      "em": 0,
+      "f1": 0.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "qf_3005",
+      "question": "Beethoven wrote only one opera, can you name it?",
+      "gold_aliases": [
+        "Fidelio",
+        "Fidelio, Opus 72c (Beethoven)",
+        "Leonora Overtures",
+        "Leonore",
+        "Leonore I"
+      ],
+      "prediction": "Fidelio",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "sfq_10873",
+      "question": "What is the collective name for a group of hawks or falcons?",
+      "gold_aliases": [
+        "CAST",
+        "CAST (disambiguation)",
+        "cast",
+        "cast disambiguation"
+      ],
+      "prediction": "A cast of hawks or falcons",
+      "em": 0,
+      "f1": 0.33333333333333337,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "sfq_13847",
+      "question": "Which Norwegian firm supposedly produced the first fleece fabrics in the 1960s?",
+      "gold_aliases": [
+        "Helly Hansen",
+        "Helly Juell Hansen",
+        "Helly-Hansen",
+        "helly hansen",
+        "helly juell hansen"
+      ],
+      "prediction": "Helly Hansen®",
+      "em": 0,
+      "f1": 0.5,
+      "seed": 42
+    },
+    {
+      "arm": "nnma_in_chat",
+      "qid": "dpql_1068",
+      "question": "Which American resort is nicknamed 'Sin City'?",
+      "gold_aliases": [
+        "City of Las Vegas",
+        "LV, NV",
+        "Las Vegas",
+        "Las Vegas (NV)",
+        "Las Vegas City Council"
+      ],
+      "prediction": "Las Vegas",
+      "em": 1,
+      "f1": 1.0,
+      "seed": 42
+    }
+  ]
+}
