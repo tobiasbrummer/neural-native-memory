@@ -113,10 +113,27 @@ def parse_args():
     parser.add_argument("--zscore", action="store_true", help="Apply Z-Score")
     parser.add_argument("--prompt", type=str, default=None, help="Custom prompt template")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of documents/queries for testing")
+    parser.add_argument("--seed", type=int, default=42,
+                        help="Random seed for numpy/torch (BEIR's own SciFact split is fixed; "
+                             "this only affects model nondeterminism and any future random sampling).")
     return parser.parse_args()
+
+def _set_seed(seed: int) -> None:
+    import random as _random
+    _random.seed(seed)
+    np.random.seed(seed)
+    try:
+        import torch as _torch
+        _torch.manual_seed(seed)
+        if _torch.cuda.is_available():
+            _torch.cuda.manual_seed_all(seed)
+    except ImportError:
+        pass
 
 def main():
     args = parse_args()
+    _set_seed(args.seed)
+    logger.info(f"Random seed set to {args.seed}")
     results_dir = create_results_dir("exp4_beir")
     
     # 1. Download/Load Dataset
@@ -227,7 +244,9 @@ def main():
             "load_in_4bit": args.load_in_4bit,
             "whitening": args.whitening,
             "zscore": args.zscore,
-            "prompt": args.prompt
+            "prompt": args.prompt,
+            "seed": args.seed,
+            "limit": args.limit,
         },
         "metrics": {
             "ndcg": ndcg,
