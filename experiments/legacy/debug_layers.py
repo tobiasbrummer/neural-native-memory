@@ -11,7 +11,7 @@ import torch
 import matplotlib.pyplot as plt
 
 # Add project root to path
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 # Configure basic logging to stdout
@@ -22,8 +22,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger("debug_layers")
 
-from lib.model_loader import load_model
-from lib.embedding_utils import select_optimal_layers, compute_intrinsic_dimension_twonn
+from src.legacy.model_loader import load_model
+from src.legacy.embedding_utils import select_optimal_layers, compute_intrinsic_dimension_twonn
 
 def main():
     logger.info("Starting Layer Selection Debugger")

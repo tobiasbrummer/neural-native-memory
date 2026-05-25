@@ -18,17 +18,17 @@ from pathlib import Path
 import torch
 
 # Add project root to path
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from lib.model_loader import load_model, DEFAULT_MODEL
-from lib.virtual_prefix import (
+from src.legacy.model_loader import load_model, DEFAULT_MODEL
+from src.legacy.virtual_prefix import (
     extract_kv_cache,
     generate_with_stored_kv,
     save_kv_cache,
     load_kv_cache,
 )
-from lib.io_utils import setup_logging, create_results_dir
+from src.legacy.io_utils import setup_logging, create_results_dir
 
 
 def run_experiment():
@@ -55,7 +55,7 @@ def run_experiment():
         except ImportError:
             logger.error("llama-cpp-python not installed. Run: pip install llama-cpp-python")
             return
-        from lib.llama_cpp_kv_store import extract_kv_state, generate_with_kv_state
+        from src.legacy.llama_cpp_kv_store import extract_kv_state, generate_with_kv_state
 
         model_path = args.gguf if args.gguf else args.model
         logger.info(f"Loading llama.cpp model: {model_path}")

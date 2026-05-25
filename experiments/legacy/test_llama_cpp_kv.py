@@ -18,7 +18,7 @@ from pathlib import Path
 # Add project root
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from lib.io_utils import setup_logging, create_results_dir
+from src.legacy.io_utils import setup_logging, create_results_dir
 
 # Default model path
 DEFAULT_MODEL = "/media/project_1/AI/models/phi-4-Q4_K_M.gguf"
@@ -39,7 +39,7 @@ def run_experiment(model_path: str):
         logger.error("llama-cpp-python not installed. Run: pip install llama-cpp-python")
         return
     
-    from lib.llama_cpp_kv_store import (
+    from src.legacy.llama_cpp_kv_store import (
         extract_kv_state,
         inject_kv_state,
         save_kv_state,

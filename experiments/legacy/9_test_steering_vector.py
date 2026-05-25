@@ -22,16 +22,16 @@ import numpy as np
 from typing import List, Dict
 
 # Add project root to path
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from lib.model_loader import load_model
-from lib.virtual_prefix import (
+from src.legacy.model_loader import load_model
+from src.legacy.virtual_prefix import (
     extract_kv_cache,
     generate_with_stored_kv,
     StoredKVCache
 )
-from lib.io_utils import setup_logging, create_results_dir
+from src.legacy.io_utils import setup_logging, create_results_dir
 
 def get_mean_kv_deltas(
     model, 

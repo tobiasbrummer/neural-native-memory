@@ -24,7 +24,7 @@ def main():
     from llama_cpp import Llama
     
     # Load our custom API separately
-    from lib.llama_cpp_kv_layer import LlamaKVLayerAPI
+    from src.legacy.llama_cpp_kv_layer import LlamaKVLayerAPI
     
     print(f"\n1. Loading model with llama-cpp-python...")
     print(f"   Path: {MODEL_PATH}")

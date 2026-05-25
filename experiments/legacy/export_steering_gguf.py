@@ -20,7 +20,7 @@ import numpy as np
 import torch
 
 # Add project root to path
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 # Add llama.cpp/gguf-py to path
@@ -36,9 +36,9 @@ except ImportError:
     print("ERROR: Failed to import gguf. Please ensure llama.cpp submodule is initialized or gguf is installed.")
     sys.exit(1)
 
-from lib.model_loader import load_model, DEFAULT_MODEL
-from lib.virtual_prefix import PreRopeExtractor
-from lib.io_utils import setup_logging, create_results_dir
+from src.legacy.model_loader import load_model, DEFAULT_MODEL
+from src.legacy.virtual_prefix import PreRopeExtractor
+from src.legacy.io_utils import setup_logging, create_results_dir
 
 logger = logging.getLogger(__name__)
 

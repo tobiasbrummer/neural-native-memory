@@ -11,13 +11,13 @@ Tests loading AWQ MoE model with expert CPU offloading and validates:
 import sys
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 import torch
 import logging
-from lib.moe_loader import load_moe_model, get_expert_locations
-from lib.io_utils import setup_logging, create_results_dir
+from src.legacy.moe_loader import load_moe_model, get_expert_locations
+from src.legacy.io_utils import setup_logging, create_results_dir
 
 # Default model path (update to your model)
 DEFAULT_MODEL = "/media/project_1/AI/models/Qwen3-Next-80B-A3B-Thinking-AWQ-4bit"

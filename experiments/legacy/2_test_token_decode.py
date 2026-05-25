@@ -15,19 +15,19 @@ import sys
 from pathlib import Path
 
 # Add project root to path
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 import numpy as np
 
-from lib.io_utils import (
+from src.legacy.io_utils import (
     create_results_dir,
     load_test_documents,
     save_json,
     setup_logging,
 )
-from lib.model_loader import load_model, DEFAULT_MODEL
-from lib.token_utils import (
+from src.legacy.model_loader import load_model, DEFAULT_MODEL
+from src.legacy.token_utils import (
     TokenEmbeddingIndex,
     extract_static_embeddings,
     compute_reconstruction_accuracy,
@@ -59,8 +59,8 @@ def main():
     args, _ = parser.parse_known_args()
 
     if args.backend == "llama":
-        from lib.llama_raw import LlamaModel
-        from lib.llama_embedding_utils import extract_static_embeddings_llama
+        from src.legacy.llama_raw import LlamaModel
+        from src.legacy.llama_embedding_utils import extract_static_embeddings_llama
 
         model_path = args.gguf if args.gguf else (args.model if args.model else "")
         if not model_path:

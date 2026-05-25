@@ -4,10 +4,10 @@
 import sys
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from lib.model_loader import load_model
+from src.legacy.model_loader import load_model
 from transformers.cache_utils import DynamicCache
 import torch
 

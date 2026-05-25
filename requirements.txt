@@ -9,3 +9,4 @@ accelerate>=0.27.0
 bitsandbytes>=0.41.0
 beir>=2.0.0
 qdrant-client>=1.10.0
+transformer_lens>=2.0.0

@@ -6,13 +6,13 @@ Test to compare our KV projection + RoPE with transformers' internal computation
 import sys
 from pathlib import Path
 
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 import torch
 import numpy as np
-from lib.model_loader import load_model
-from lib.virtual_prefix import (
+from src.legacy.model_loader import load_model
+from src.legacy.virtual_prefix import (
     PreRopeExtractor,
     project_hidden_to_kv,
     apply_rope_to_keys,

@@ -21,15 +21,15 @@ import torch
 import numpy as np
 
 # Add project root to path
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from beir import util
 from beir.datasets.data_loader import GenericDataLoader
 
-from lib.model_loader import load_model
-from lib.virtual_prefix import extract_kv_cache, generate_with_stored_kv
-from lib.io_utils import setup_logging, create_results_dir
+from src.legacy.model_loader import load_model
+from src.legacy.virtual_prefix import extract_kv_cache, generate_with_stored_kv
+from src.legacy.io_utils import setup_logging, create_results_dir
 
 
 def load_beir_documents(dataset: str = "scifact", n_docs: int = 20) -> list:

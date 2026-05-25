@@ -15,19 +15,19 @@ import json
 from pathlib import Path
 
 # Add project root to path
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 import numpy as np
 
-from lib.io_utils import (
+from src.legacy.io_utils import (
     create_results_dir,
     load_test_documents,
     save_json,
     setup_logging,
 )
-from lib.model_loader import load_model, DEFAULT_MODEL
-from lib.embedding_utils import (
+from src.legacy.model_loader import load_model, DEFAULT_MODEL
+from src.legacy.embedding_utils import (
     KVEmbeddingExtractor,
     compute_similarity_matrix,
     apply_pca_whitening,
@@ -80,8 +80,8 @@ def main():
     # Load model
     logger.info("Loading model...")
     if args.backend == "llama":
-        from lib.llama_raw import LlamaModel
-        from lib.llama_embedding_utils import LlamaKVEmbeddingExtractor
+        from src.legacy.llama_raw import LlamaModel
+        from src.legacy.llama_embedding_utils import LlamaKVEmbeddingExtractor
 
         model_path = args.gguf if args.gguf else args.model
         model = LlamaModel(model_path, n_ctx=args.n_ctx, n_gpu_layers=args.n_gpu_layers)

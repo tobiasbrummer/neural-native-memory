@@ -22,16 +22,16 @@ from dataclasses import dataclass
 from typing import Dict, List, Tuple
 
 # Add project root to path
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 # Project imports
-from lib.io_utils import create_results_dir, load_test_documents, setup_logging, save_json
-from lib.model_loader import load_model, get_device
-from lib.embedding_utils import KVEmbeddingExtractor
-from lib.token_utils import extract_static_embeddings
-from lib.compression import scalar_quantize, scalar_dequantize
-from lib.virtual_prefix import project_hidden_to_kv
+from src.legacy.io_utils import create_results_dir, load_test_documents, setup_logging, save_json
+from src.legacy.model_loader import load_model, get_device
+from src.legacy.embedding_utils import KVEmbeddingExtractor
+from src.legacy.token_utils import extract_static_embeddings
+from src.legacy.compression import scalar_quantize, scalar_dequantize
+from src.legacy.virtual_prefix import project_hidden_to_kv
 
 # =============================================================================
 # Benchmarking Utils

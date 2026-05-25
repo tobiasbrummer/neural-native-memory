@@ -13,7 +13,7 @@ from typing import List, Dict, Union
 import numpy as np
 
 # Add project root to path
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from beir import util, LoggingHandler
@@ -23,9 +23,9 @@ from beir.retrieval.search.dense import DenseRetrievalExactSearch
 from beir.datasets.data_loader import GenericDataLoader
 
 from sklearn.decomposition import PCA
-from lib.io_utils import create_results_dir, setup_logging, save_json
-from lib.model_loader import load_model, DEFAULT_MODEL
-from lib.embedding_utils import (
+from src.legacy.io_utils import create_results_dir, setup_logging, save_json
+from src.legacy.model_loader import load_model, DEFAULT_MODEL
+from src.legacy.embedding_utils import (
     KVEmbeddingExtractor, 
     apply_zscore
 )

@@ -12,16 +12,16 @@ import argparse
 from pathlib import Path
 
 # Add project root to path
-PROJECT_ROOT = Path(__file__).parent.parent
+PROJECT_ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 import numpy as np
 from sklearn.decomposition import PCA
 from sklearn.metrics.pairwise import cosine_similarity
 
-from lib.io_utils import create_results_dir, setup_logging
-from lib.model_loader import load_model, DEFAULT_MODEL
-from lib.embedding_utils import KVEmbeddingExtractor, apply_zscore
+from src.legacy.io_utils import create_results_dir, setup_logging
+from src.legacy.model_loader import load_model, DEFAULT_MODEL
+from src.legacy.embedding_utils import KVEmbeddingExtractor, apply_zscore
 
 logger = None
 

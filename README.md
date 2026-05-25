@@ -60,7 +60,7 @@ neural-native-memory/
 ### Dependencies
 
 ```bash
-pip install transformerlens qdrant-client torch numpy
+pip install transformer_lens qdrant-client torch numpy
 ```
 
 For GPU (recommended):
