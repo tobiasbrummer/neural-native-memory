@@ -11,11 +11,11 @@ from typing import List
 
 import numpy as np
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+REPO_ROOT = Path(__file__).resolve().parents[1]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from nnm.kvembed import KVEmbeddingConfig, TransformerLensKVEmbedder
+from src.kvembed import KVEmbeddingConfig, TransformerLensKVEmbedder
 
 
 def _read_lines(path: Path) -> List[str]:

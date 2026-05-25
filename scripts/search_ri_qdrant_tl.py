@@ -12,13 +12,13 @@ from typing import Dict, List, Sequence
 import numpy as np
 import torch
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+REPO_ROOT = Path(__file__).resolve().parents[1]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
-from nnm.kvembed import KVEmbeddingConfig, TransformerLensKVEmbedder
-from nnm.kvembed.prompts import build_compression_prompt
-from nnm.storage import NNMQdrantTokenStore, load_retrieval_transform
+from src.kvembed import KVEmbeddingConfig, TransformerLensKVEmbedder
+from src.kvembed.prompts import build_compression_prompt
+from src.storage import NNMQdrantTokenStore, load_retrieval_transform
 
 
 def _parse_int_list(raw: str) -> List[int]:

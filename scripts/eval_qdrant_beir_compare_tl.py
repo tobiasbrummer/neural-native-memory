@@ -17,14 +17,14 @@ from typing import Dict, List, Mapping, Optional, Sequence, Tuple
 import numpy as np
 import torch
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+REPO_ROOT = Path(__file__).resolve().parents[1]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
 from lib.io_utils import create_results_dir, save_json, setup_logging
-from nnm.kvembed import KVEmbeddingConfig, TransformerLensKVEmbedder
-from nnm.kvembed.prompts import build_compression_prompt
-from nnm.storage import NNMQdrantTokenStore, RetrievalTransform, load_retrieval_transform
+from src.kvembed import KVEmbeddingConfig, TransformerLensKVEmbedder
+from src.kvembed.prompts import build_compression_prompt
+from src.storage import NNMQdrantTokenStore, RetrievalTransform, load_retrieval_transform
 
 
 @dataclass(frozen=True)
